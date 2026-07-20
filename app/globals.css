@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+/*
+  Liar Liar — design tokens
+  Sourced from the "LL UI Style Guides" Figma page (Colour & Styles).
+  Modern Japanese dinner & disco — dark, warm, editorial.
+*/
+@theme {
+  /* Dark surfaces */
+  --color-soy: #220715; /* Soy Sauce — deepest base */
+  --color-ink: #140000; /* Dark colour 2 */
+  --color-claret: #240000; /* Dark Claret — button 1 hover */
+  --color-claret-mid: #330000; /* Midnight Claret — footer + button */
+  --color-mulberry: #490f1e; /* Mulberry */
+  --color-clay: #8a291d; /* Shuiro Clay */
+  --color-kyobeni: #913931; /* Kyōbeni */
+  --color-ochre: #993300; /* Ochre */
+
+  /* Warm accents */
+  --color-torii: #e9522b; /* Torii Red */
+  --color-kabloom: #ff3b11; /* Kabloom Mode (Warm Red) */
+  --color-flame: #ff7254; /* Attention CTAs (use rarely) */
+  --color-sakura: #ff9c9c; /* Sakura Pink */
+  --color-koki: #fff746; /* Kōki Yellow */
+  --color-matcha: #d7e480; /* Matcha */
+
+  /* Sand / gold neutrals */
+  --color-sand: #f0e9df; /* Light Sand — primary text on dark */
+  --color-sand-deep: #d4bea6; /* Shibui Sand */
+  --color-wheat: #c1baaa; /* Button 2 hover Wheat */
+  --color-gold: #765836; /* Gold */
+  --color-gold-light: #a87d4d; /* Light Gold */
+  --color-disabled: #f8f5f3; /* Grey Disabled */
+
+  /* Typography */
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-hanken), ui-sans-serif, system-ui, sans-serif;
+  --font-space: var(--font-space);
+  /* --font-cormorant: var(--font-cormorant); */
+  /* --font-hanken: var(--font-hanken); */
+
+  /* Layout */
+  --breakpoint-xs: 25rem;
+}
+
+@utility font-migra {
+  font-family: var(--font-migra);
+}
+
+:root {
+  --background: #220715;
+  --foreground: #f0e9df;
+  /* Hero radial glow ("Radial 2") */
+  --glow: radial-gradient(
+    120% 90% at 50% 0%,
+    #e9522b 0%,
+    #993300 28%,
+    #490f1e 58%,
+    #220715 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-torii);
+  color: var(--color-sand);
+}
+
+/* Editorial display headings */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Eyebrow / label — uppercase, tracked */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-gold-light);
+}
+
+/* Warm radial hero backdrop */
+.glow {
+  background: var(--glow);
+}
+
+/* Vignette overlay helper */
+.vignette::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    120% 100% at 50% 0%,
+    transparent 40%,
+    rgba(20, 0, 0, 0.6) 100%
+  );
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-marquee {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

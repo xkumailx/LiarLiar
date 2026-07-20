@@ -1,0 +1,72 @@
+import type { LLEvent } from "@/lib/types";
+
+/** Local fallback events — used when WordPress is not connected.
+ *  Copy sourced from the Figma "What's On", "Landing" and "After Dark" pages. */
+export const events: LLEvent[] = [
+  {
+    id: "sip-and-sushi",
+    slug: "sip-and-sushi",
+    title: "Sip & Sushi",
+    cadence: "Every Sunday",
+    dateLabel: "Sundays · 12pm – 9pm",
+    excerpt: "2 hours of bottomless sushi, sips and live music. / $99pp /",
+    price: "$99pp",
+    category: "weekly",
+    strands: ["dining"],
+    body: "Sunday nights just got a whole lot better. Pull up a seat, grab a drink, and let the sushi do the talking. Whether you're rolling in solo or bringing the crew, Sip & Sushi is your new Sunday ritual — two hours of bottomless sushi, sips and live music.",
+  },
+  {
+    id: "yakitori-night",
+    slug: "yakitori-night",
+    title: "Yakitori Night",
+    cadence: "Every Wednesday",
+    dateLabel: "Wednesdays",
+    excerpt: "$12 selected skewers & $20 selected cocktails.",
+    category: "weekly",
+    strands: ["dining"],
+    body: "Mid-week, handled. $12 selected skewers off the robata and $20 selected cocktails. Charcoal, smoke, and a reason to leave the house on a Wednesday.",
+  },
+  {
+    id: "confessions-and-cocktails",
+    slug: "confessions-and-cocktails",
+    title: "Confessions & Cocktails",
+    cadence: "Every Month",
+    dateLabel: "Monthly",
+    excerpt:
+      "Your confessions unleashed to the Night Gremlins — and maybe we'll turn it into a cocktail.",
+    category: "weekly",
+    strands: ["after-dark"],
+    body: "Every month we take your anonymous confessions and hand them to the Night Gremlins. The best one becomes the Cocktail of the Month.",
+  },
+  {
+    id: "koshamika-osen",
+    slug: "koshamika-osen",
+    title: "Koshamika Osen",
+    dateLabel: "Saturday 10.08 · 9:30PM",
+    date: "2025-08-10",
+    excerpt: "A late-night set to take the room somewhere else.",
+    category: "featured",
+    strands: ["after-dark"],
+    body: "Resident energy meets a guest selector. Doors from 9:30PM — the dancefloor is yours.",
+  },
+  {
+    id: "the-producer-sitting",
+    slug: "omakase-producer-sitting",
+    title: "OMAKASE / The Producer Sitting",
+    dateLabel: "Day, Date and Time",
+    excerpt: "A collaborative omakase progression with a guest producer.",
+    category: "upcoming",
+    strands: ["omakase"],
+    body: "A one-night collaboration at the counter. 14–16 courses, sourced globally, sequenced for the evening.",
+  },
+  {
+    id: "the-collaboration-sitting",
+    slug: "omakase-collaboration-sitting",
+    title: "OMAKASE / The Collaboration Sitting",
+    dateLabel: "Day, Date and Time",
+    excerpt: "Two kitchens, one counter, one night only.",
+    category: "upcoming",
+    strands: ["omakase"],
+    body: "Two kitchens take the counter for a single evening. Limited seats.",
+  },
+];
