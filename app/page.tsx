@@ -16,6 +16,9 @@ import { getEvents } from "@/lib/wordpress";
 // import { foodHighlights, drinkHighlights } from "@/lib/content/menu";
 // import { site } from "@/lib/content/site";
 import Image from "next/image";
+import Link from "next/dist/client/link";
+import EventCard from "@/components/ui/event-card";
+import EventsCardswb from "@/components/ui/events-cards-wb";
 
 const images = [
   { src: "/Drink-1.jpg", alt: "Gallery 1" },
@@ -38,14 +41,26 @@ export default async function HomePage() {
 
   return (
     <>
-      <section className="relative w-full h-screen overflow-hidden">
-        <HeroBanner image="/Dining-Experience.webp" title="Dining Experience" />
+      <section className="bg-black">
+        <div>
+          <Image
+            src="/landing-page-banner.png"
+            alt=""
+            width={1920}
+            height={1080}
+            className="w-full h-auto object-cover"
+          />
+        </div>
       </section>
+
+      {/* <section className="relative w-full h-screen overflow-hidden">
+        <HeroBanner image="/Dining-Experience.webp" title="Dining Experience" />
+      </section> */}
 
       <Section className="bg-claret/30">
         <div className="">
           <h1 className="font-migra text-white text-center text-5xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
-            Modern Japanese dining. Bayside&apos;s best kept secret.
+            Modern Japanese dinner & Disco.
           </h1>
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
             Japanese technique. Global ingredients. This is the full experience.
@@ -59,11 +74,25 @@ export default async function HomePage() {
               variant="bgsquare"
               size="sm"
             >
-              Reservations
+              Reserve a Table
             </Button>
           </div>
         </div>
       </Section>
+
+      <section>
+        <div>
+          <p className=" font-space font-extrabold text-center text-base uppercase text-[#F0E9DF]">
+            Opening Hours
+          </p>
+          <div className="mt-7 space-y-5 font-space text-center leading-relaxed text-[#F0E9DF]">
+            <p className="mb-0">Wednesday &amp; Thursday 5:30pm—11pm</p>
+            <p className="mb-0">Friday 5:30pm—1am</p>
+            <p className="mb-0">Saturday 12pm—1am</p>
+            <p className="mb-0">Sunday 12pm—10pm</p>
+          </div>
+        </div>
+      </section>
 
       {/* Experiences */}
       <Section>
@@ -87,15 +116,24 @@ export default async function HomePage() {
       </Section>
 
       <Section>
-        <div className="flex justify-center">
-          <div className="relative w-full max-w-[540px] h-[540px] overflow-hidden">
-            <Image
-              src="/Pink_Neon.png"
-              alt="Dining Experience"
-              fill
-              className="object-cover"
-            />
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <ExperienceCards
+            href="#"
+            image="/View-food-menu.png"
+            imageAlt="Our Menu"
+            eyebrow="Modern Japanese"
+            title="Dining"
+            description="Small plates, robata fire, fresh nigiri, and a drinks list that carries the night long after the last course."
+          />
+
+          <ExperienceCards
+            href="#"
+            image="/View-drink-list.png"
+            imageAlt="Private Dining"
+            eyebrow="The Liar Liar Experience"
+            title="Omakase"
+            description="Trust the kitchen. 14-16 courses, sourced globally, plated in front of you. The chef leads — something remarkable happens in between."
+          />
         </div>
       </Section>
 
@@ -105,26 +143,116 @@ export default async function HomePage() {
             href="#"
             image="/View-food-menu.png"
             imageAlt="Our Menu"
-            eyebrow="Modern Japanese"
-            title="View Food Menu"
-            description="A considered menu that travels from the delicate to the bold — fresh oysters and single bites giving way to shared plates, robata fire, and substantial cuts for when the evening calls for it. You won't regret it."
+            eyebrow="Late Night Energy"
+            title="After Dark"
+            description="When the lights drop, Liar Liar doesn't slow down — it ignites. DJs, late nights, and the kind of energy worth staying for."
           />
 
           <ExperienceCards
             href="#"
             image="/View-drink-list.png"
             imageAlt="Private Dining"
-            eyebrow="Signature Drinks"
-            title="View Drinks List"
-            description="An extensive sake list, Japanese whisky featuring Yamazaki, Hibiki and Nikka, wine, and a cocktail program that changes with the confessions. Our signature drinks list is crafted to complement the dining experience and carry the night long after."
+            eyebrow="Own The Night"
+            title="Rooftop VIP Bottle Service"
+            description="Your own table. Premium pours. A night built entirely around your group. With a sake list and cocktail menu like ours, the only way to do it properly is bottle service."
           />
         </div>
       </Section>
 
-      <section>
-        <ImageSlider images={images} />
-      </section>
-       {/* Orange card    */}
+      <Section>
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
+          <Link
+            href="#"
+            className="group block border border-white/100 rounded-xl overflow-hidden transition-all duration-300 hover:border-white"
+          >
+            <div className="p-8">
+              <p className="font-space font-extrabold text-center text-xs uppercase tracking-[0.2em] text-[#F0E9DF]">
+                Do you Have a Function or Event?
+              </p>
+
+              <h3 className="font-migra font-extrabold text-center text-5xl mt-7 text-[#F0E9DF]">
+                Private Dining
+              </h3>
+
+              <p className="font-space text-center leading-relaxed mt-7 text-[#F0E9DF] min-h-[120px]">
+                Tell us what you&apos;re planning. We&apos;ll handle everything
+                else.
+              </p>
+              <div className="relative text-center mt-7 overflow-hidden">
+                <Image
+                  src="/View-food-menu.png"
+                  alt=""
+                  width={540}
+                  height={338}
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+            </div>
+          </Link>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <EventCard
+            href="#"
+            image="/koshamika-osen.png"
+            imageAlt="Producer Sitting"
+            title="Event Name"
+            date="Day, Date and Time"
+          />
+
+          <EventCard
+            href="#"
+            image="/koshamika-osen.png"
+            imageAlt="Collaboration Sitting"
+            title="Event Name"
+            date="Day, Date and Time"
+          />
+        </div>
+        <div className="mt-[4em] text-center">
+          <Button
+            className="px-[2em]"
+            href="/reservations"
+            variant="bgsquare"
+            size="sm"
+          >
+            See All
+          </Button>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <EventsCardswb
+            href="#"
+            image="/Ultimate-experience.png"
+            imageAlt="Our Menu"
+            eyebrow="Every Month"
+            title="Confessions & Cocktails"
+            description="Your confessions unleashed to the Night Gremlins and maybe we’ll turn it into cocktail."
+          />
+
+          <EventsCardswb
+            href="#"
+            image="/the-journey.png"
+            imageAlt="Private Dining"
+            eyebrow="Every Wednesday"
+            title="Yakitori Night"
+            description="$12 selected skewers & $20 selected cocktails."
+          />
+
+          <EventsCardswb
+            href="#"
+            image="/Ultimate-experience.png"
+            imageAlt="Our Menu"
+            eyebrow="Every Saturday"
+            title="Sip & Sushi"
+            description="2 hours of bottomless sushi, sips and live music. / $99pp /"
+          />
+        </div>
+      </Section>
+
       <Section>
         <div className="">
           <OrangeCard
@@ -144,70 +272,9 @@ export default async function HomePage() {
         </div>
       </Section>
 
-      {/* What's On */}
-      {/* <Section className="bg-claret/30">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHeading
-            eyebrow="What's On"
-            title="The line-up changes. The standard doesn't."
-          />
-          <Button href="/whats-on" variant="ghost" size="sm">
-            See all events ›
-          </Button>
-        </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {whatsOn.map((event) => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
-      </Section> */}
-
-      {/* Menu */}
-      {/* <Section id="menu">
-        <MenuShowcase food={foodHighlights} drinks={drinkHighlights} />
-      </Section> */}
-
-      {/* Private dining / functions */}
-      {/* <Section className="bg-claret/30">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <Media ratio="aspect-[4/3]" label="Private Dining" />
-          <div>
-            <p className="eyebrow mb-4">Private Dining</p>
-            <h2 className="font-display text-4xl text-sand sm:text-5xl">
-              Do you have a function or event?
-            </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-sand/70">
-              Groups, celebrations, and big nights — tell us what you&apos;re
-              planning. We&apos;ll handle everything else.
-            </p>
-            <div className="mt-8">
-              <Button href="/reservations#events" variant="gold">
-                Plan Your Event
-              </Button>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-
-      {/* Instagram */}
-      {/* <Section className="text-center">
-        <p className="eyebrow mb-4">Instagram</p>
-        <a
-          href={site.social.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-display text-3xl text-sand hover:text-torii sm:text-4xl"
-        >
-          @liarliarbraeside
-        </a>
-        <Container className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <Media key={i} ratio="aspect-square" rounded="rounded-xl" />
-          ))}
-        </Container>
-      </Section> */}
-
-      {/* <ReservationCTA /> */}
+      <section>
+        <ImageSlider images={images} />
+      </section>
     </>
   );
 }
