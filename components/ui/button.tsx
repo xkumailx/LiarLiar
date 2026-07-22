@@ -49,6 +49,8 @@ type CommonProps = {
 type ButtonAsLink = CommonProps & {
   href: string;
   external?: boolean;
+  target?: "_blank" | "_self" | "_parent" | "_top";
+  rel?: string;
   onClick?: () => void;
 };
 
@@ -64,13 +66,22 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
   const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
 
   if (isLink(props)) {
-    const { href, external, onClick } = props;
-    if (external || href.startsWith("http") || href.startsWith("mailto")) {
+    const { href, external, target, rel, onClick } = props;
+
+    const isExternal =
+      external || href.startsWith("http") || href.startsWith("mailto");
+
+    if (isExternal) {
       return (
         <a
           href={href}
-          target={external ? "_blank" : undefined}
-          rel={external ? "noopener noreferrer" : undefined}
+          target={target ?? (external ? "_blank" : undefined)}
+          rel={
+            rel ??
+            (target === "_blank" || external
+              ? "noopener noreferrer"
+              : undefined)
+          }
           className={classes}
           onClick={onClick}
         >
@@ -78,8 +89,15 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
         </a>
       );
     }
+
     return (
-      <Link href={href} className={classes} onClick={onClick}>
+      <Link
+        href={href}
+        target={target}
+        rel={rel}
+        className={classes}
+        onClick={onClick}
+      >
         {children}
       </Link>
     );

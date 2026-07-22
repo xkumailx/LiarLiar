@@ -3,7 +3,7 @@
 import { Section } from "@/components/ui/section";
 import ExperienceCards from "@/components/ui/white-cards";
 import OrangeCard from "@/components/ui/orange-cards";
-import HeroBanner from "@/components/ui/herobanner";
+// import HeroBanner from "@/components/ui/herobanner";
 import ImageSlider from "@/components/ui/image-slider";
 import { Button } from "@/components/ui/button";
 // import { Container } from "@/components/ui/container";
@@ -59,7 +59,7 @@ export default async function HomePage() {
 
       <Section className="bg-claret/30">
         <div className="">
-          <h1 className="font-migra text-white text-center text-5xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
+          <h1 className="font-migra text-white text-center text-4xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
             Modern Japanese dinner & Disco.
           </h1>
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
@@ -69,8 +69,9 @@ export default async function HomePage() {
           </p>
           <div className="mt-8 text-center">
             <Button
-              className="px-[1em]"
-              href="/reservations"
+              target="_blank"
+              className="px-[1em] text-xs md:text-sm"
+              href="https://www.opentable.com.au/booking/restref/availability?lang=en-AU&correlationId=8cdbec62-b146-4e22-b085-4190fc9c4e8e&restRef=279680&otSource=Restaurant%20website"
               variant="bgsquare"
               size="sm"
             >
@@ -166,19 +167,19 @@ export default async function HomePage() {
             className="group block border border-white/100 rounded-xl overflow-hidden transition-all duration-300 hover:border-white"
           >
             <div className="p-8">
-              <p className="font-space font-extrabold text-center text-xs uppercase tracking-[0.2em] text-[#F0E9DF]">
+              <p className="text-center font-space text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#F0E9DF] sm:text-xs">
                 Do you Have a Function or Event?
               </p>
 
-              <h3 className="font-migra font-extrabold text-center text-5xl mt-7 text-[#F0E9DF]">
+              <h3 className="mt-5 text-center font-migra text-3xl font-extrabold text-[#F0E9DF] sm:mt-6 sm:text-4xl lg:mt-7 lg:text-5xl">
                 Private Dining
               </h3>
 
-              <p className="font-space text-center leading-relaxed mt-7 text-[#F0E9DF] min-h-[120px]">
+              <p className="mt-5 text-center font-space text-sm leading-relaxed text-[#F0E9DF] sm:mt-6 sm:min-h-[100px] sm:text-base lg:mt-7 lg:min-h-[120px]">
                 Tell us what you&apos;re planning. We&apos;ll handle everything
                 else.
               </p>
-              <div className="relative text-center mt-7 overflow-hidden">
+              <div className="relative flex justify-center text-center mt-7 overflow-hidden">
                 <Image
                   src="/View-food-menu.png"
                   alt=""
@@ -256,7 +257,7 @@ export default async function HomePage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/menu"
+            href="https://www.opentable.com.au/booking/restref/availability?lang=en-AU&correlationId=8cdbec62-b146-4e22-b085-4190fc9c4e8e&restRef=279680&otSource=Restaurant%20website"
             eyebrow="Opening Hours"
             title="Reservations"
             description={

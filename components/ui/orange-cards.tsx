@@ -18,7 +18,7 @@ export default function OrangeCard({
   return (
     <div className="border border-[#FF3B11] p-10 lg:p-10 text-center flex flex-col items-center bg-transparent">
       {/* Heading */}
-      <h2 className="mt-5 font-migra font-extrabold text-[#F0E9DF] text-5xl md:text-6xl leading-none">
+      <h2 className="mt-5 font-migra font-extrabold text-[#F0E9DF] text-4xl md:text-6xl lg:text-5xl leading-none">
         {title}
       </h2>
       {/* Eyebrow */}
