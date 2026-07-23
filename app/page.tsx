@@ -17,7 +17,7 @@ import { getEvents } from "@/lib/wordpress";
 // import { site } from "@/lib/content/site";
 import Image from "next/image";
 import Link from "next/dist/client/link";
-import EventCard from "@/components/ui/event-card";
+// import EventCard from "@/components/ui/event-card";
 import EventsCardswb from "@/components/ui/events-cards-wb";
 
 const images = [
@@ -90,7 +90,7 @@ export default async function HomePage() {
             <p className="mb-0">Wednesday &amp; Thursday 5:30pm—11pm</p>
             <p className="mb-0">Friday 5:30pm—1am</p>
             <p className="mb-0">Saturday 12pm—1am</p>
-            <p className="mb-0">Sunday 12pm—10pm</p>
+            <p className="mb-0">Sunday 12pm—9pm</p>
           </div>
         </div>
       </section>
@@ -193,7 +193,7 @@ export default async function HomePage() {
         </div>
       </Section>
 
-      <Section>
+      {/* <Section>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <EventCard
             href="#"
@@ -221,7 +221,7 @@ export default async function HomePage() {
             See All
           </Button>
         </div>
-      </Section>
+      </Section> */}
 
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -265,7 +265,7 @@ export default async function HomePage() {
                 <p className="mb-0">Wednesday & Thursday 5:30pm—11pm</p>
                 <p className="mb-0">Friday 5:30pm—1am</p>
                 <p className="mb-0">Saturday 12pm—1am</p>
-                <p className="mb-0">Sunday 12pm—10pm</p>
+                <p className="mb-0">Sunday 12pm—9pm</p>
               </>
             }
             buttonText="Reserve a Table"
