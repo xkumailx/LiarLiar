@@ -42,15 +42,15 @@ export default async function HomePage() {
   return (
     <>
       <section className="bg-black">
-        <div>
-          <Image
-            src="/landing-page-banner.png"
-            alt=""
-            width={1920}
-            height={1080}
-            className="w-full h-auto object-cover"
-          />
-        </div>
+        <video
+          className="w-full h-auto lg:h-screen object-contain lg:object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/Liar-Liar.mp4" type="video/mp4" />
+        </video>
       </section>
 
       {/* <section className="relative w-full h-screen overflow-hidden">
