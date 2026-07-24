@@ -21,6 +21,7 @@ export default function ExperienceCards({
   return (
     <Link
       href={href}
+      target="_blank"
       className="group block overflow-hidden rounded-xl border border-white transition-all duration-300 hover:border-white"
     >
       <div className="p-5 sm:p-6 lg:p-8">

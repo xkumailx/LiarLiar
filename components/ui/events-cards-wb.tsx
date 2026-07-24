@@ -21,6 +21,7 @@ export default function EventsCardswb({
   return (
     <Link
       href={href}
+      target="_blank"
       className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/20 bg-[#22040C] p-4 transition-all duration-300 sm:p-5 lg:p-6"
     >
       {/* Image */}
