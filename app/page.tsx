@@ -80,7 +80,7 @@ export default async function HomePage() {
             <Button
               target="_blank"
               className="px-[1em] text-xs md:text-sm block"
-              href="Dining.pdf"
+              href="Food-Menu.pdf"
               variant="bgsquare"
               size="sm"
             >
