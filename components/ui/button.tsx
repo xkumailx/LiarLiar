@@ -30,7 +30,7 @@ const variants: Record<Variant, string> = {
     "bg-[#220715] text-sand border-t-[0.5px] border-r-[2px] border-b-[2px] border-l-[0.5px] hover:bg-[#220715] px-8 py-2",
 
   bgsquare:
-    "bg-[#220715] text-[0.95em] text-sand border-t-[0.5px] border-r-[2px] border-b-[2px] border-l-[0.5px] hover:bg-[#220715] px-[3em] py-4",
+    " text-[0.95em] text-sand border-t-[0.5px] border-r-[2px] border-b-[2px] border-l-[0.5px] hover:bg-[#220715] px-[3em] py-4",
 };
 
 const sizes: Record<Size, string> = {

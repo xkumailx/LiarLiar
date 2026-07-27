@@ -67,23 +67,36 @@ export default async function HomePage() {
             Small plates built for sharing, robata grilling over hot charcoal,
             fresh nigiri, and tableside moments you won&apos;t want to miss.
           </p>
-          <div className="mt-8 text-center">
+          <div className="mt-8 flex flex-col gap-4 items-center">
             <Button
               target="_blank"
-              className="px-[1em] text-xs md:text-sm"
+              className="px-[1em] text-xs md:text-sm block"
               href="https://www.opentable.com.au/booking/restref/availability?lang=en-AU&correlationId=8cdbec62-b146-4e22-b085-4190fc9c4e8e&restRef=279680&otSource=Restaurant%20website"
               variant="bgsquare"
               size="sm"
             >
               Reserve a Table
             </Button>
+            <Button
+              target="_blank"
+              className="px-[1em] text-xs md:text-sm block"
+              href="/Dining.pdf"
+              variant="bgsquare"
+              size="sm"
+            >
+              Menu
+            </Button>
           </div>
         </div>
       </Section>
 
+      {/* <section className="">
+        <div className=" text-center"></div>
+      </section> */}
+
       <section>
         <div>
-          <p className=" font-space font-extrabold text-center text-base uppercase text-[#F0E9DF]">
+          <p className="mt-[4em] font-space font-extrabold text-center text-base uppercase text-[#F0E9DF]">
             Opening Hours
           </p>
           <div className="mt-7 space-y-5 font-space text-center leading-relaxed text-[#F0E9DF]">
