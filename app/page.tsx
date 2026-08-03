@@ -132,7 +132,7 @@ export default async function HomePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
-            href="Food-Menu-august.pdf"
+            href="Food-Menu-Design.pdf"
             image="/View-food-menu.png"
             imageAlt="Our Menu"
             eyebrow="Modern Japanese"
