@@ -8,7 +8,9 @@ type Variant =
   | "outline"
   | "ghost"
   | "square"
-  | "bgsquare";
+  | "bgsquare"
+  | "pinkbtn"
+  | "bgpurplesquare";
 type Size = "sm" | "md" | "lg";
 
 const base =
@@ -31,6 +33,12 @@ const variants: Record<Variant, string> = {
 
   bgsquare:
     "bg-[#220715] text-[0.95em] text-sand border-t-[0.5px] border-r-[2px] border-b-[2px] border-l-[0.5px] hover:bg-[#220715] px-[3em] py-4",
+
+  bgpurplesquare:
+    "bg-[#220715] !block text-[0.95em] mt-[1.5em] text-sand border-t-[0.5px] text-center border-r-[2px] border-b-[2px] border-l-[0.5px] hover:bg-[#220715] px-[3em] py-4",
+
+  pinkbtn:
+    "bg-[#FF7254] !block text-[0.95em] mt-[3.5em] text-[#220715] text-center border-[#220715] border-t-[0.5px] border-r-[2px] border-b-[2px] border-l-[0.5px] hover:bg-[#FF7254] px-[3em] py-4",
 };
 
 const sizes: Record<Size, string> = {
