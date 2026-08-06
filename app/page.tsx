@@ -19,6 +19,8 @@ import Image from "next/image";
 import Link from "next/dist/client/link";
 // import EventCard from "@/components/ui/event-card";
 import EventsCardswb from "@/components/ui/events-cards-wb";
+import PopupWrapper from "@/components/PopupWrapper";
+// import { useState } from "react";
 
 const images = [
   { src: "/Drink-1.jpg", alt: "Gallery 1" },
@@ -289,6 +291,8 @@ export default async function HomePage() {
       <section>
         <ImageSlider images={images} />
       </section>
+
+      <PopupWrapper />
     </>
   );
 }
