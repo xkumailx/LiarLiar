@@ -52,6 +52,7 @@ export default function DiningPopup({ open, onClose, href }: DiningPopupProps) {
         {/* CTA */}
         <Link
           href={href}
+          target="_blank"
           className="mt-8 flex w-full items-center justify-center bg-[#FF7254] px-10 py-4 font-space text-xs font-extrabold uppercase tracking-[0.2em] text-[#fff] transition-all duration-300 hover:bg-[#FF7254]"
           style={{
             borderWidth: "0.5px 3px 3px 0.5px",
