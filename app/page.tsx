@@ -208,6 +208,35 @@ export default async function HomePage() {
         </div>
       </Section>
 
+      <Section className="bg-claret/30">
+        <div className="">
+          <h1 className="font-migra text-white text-center text-4xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
+            Function & Event Options
+          </h1>
+          <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
+            Bring your people together for an experience worth remembering.
+          </p>
+          <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
+            From intimate private dinners to lively celebrations, our spaces are
+            designed around great food, good company, and unforgettable moments.
+            Choose from sharing menus, robata over hot charcoal, fresh sushi,
+            curated drinks, and tailored experiences created around your
+            occasion.
+          </p>
+          <div className="mt-8 flex flex-col gap-4 items-center">
+            <Button
+              target="_blank"
+              className="px-[1em] text-xs md:text-sm block"
+              href="/Functions-and-events.pdf"
+              variant="bgsquare"
+              size="sm"
+            >
+              Function & Event Options
+            </Button>
+          </div>
+        </div>
+      </Section>
+
       {/* <Section>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <EventCard
@@ -250,7 +279,7 @@ export default async function HomePage() {
           />
 
           <EventsCardswb
-            href="#"
+            href="/coming-soon"
             image="/the-journey.png"
             imageAlt="Private Dining"
             eyebrow="Every Wednesday"
@@ -264,7 +293,7 @@ export default async function HomePage() {
             imageAlt="Our Menu"
             eyebrow="Every Saturday"
             title="Sip & Sushi"
-            description="2 hours of bottomless sushi, sips and live music. / $99pp /"
+            description="( 12PM — 4PM ) 2 hours of bottomless sushi, sips and live music. / $99pp /"
           />
         </div>
       </Section>
