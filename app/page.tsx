@@ -285,6 +285,7 @@ export default async function HomePage() {
             eyebrow="Every Wednesday"
             title="Yakitori Night"
             description="$12 selected skewers & $20 selected cocktails."
+            badge="Coming Soon"
           />
 
           <EventsCardswb

@@ -8,6 +8,7 @@ interface ExperienceCardProps {
   eyebrow: string;
   title: string;
   description: string;
+  badge?: string;
 }
 
 export default function EventsCardswb({
@@ -17,6 +18,7 @@ export default function EventsCardswb({
   eyebrow,
   title,
   description,
+  badge,
 }: ExperienceCardProps) {
   return (
     <Link
@@ -32,6 +34,13 @@ export default function EventsCardswb({
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
+
+        {/* Badge */}
+        {badge && (
+          <span className="absolute left-4 top-4 z-10 rounded-full border border-[#ff7254] bg-[#ff7254] px-4 py-2 font-space text-[9px] font-bold uppercase tracking-[0.18em] text-[#22040C] shadow-[0_4px_20px_rgba(255,114,84,0.35)] sm:text-[10px]">
+            {badge}
+          </span>
+        )}
       </div>
 
       {/* Content */}
