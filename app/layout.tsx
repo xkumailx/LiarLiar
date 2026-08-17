@@ -9,6 +9,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { site } from "@/lib/content/site";
 import { migra } from "./fonts";
+import PageTransition from "@/components/PageTransition";
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space",
@@ -52,6 +53,8 @@ export default function RootLayout({
       <body
         className={`${migra.variable} min-h-full flex flex-col bg-soy text-sand`}
       >
+        <PageTransition />
+
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

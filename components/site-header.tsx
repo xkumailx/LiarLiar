@@ -31,6 +31,8 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 pt-[0.5rem] pb-[0.5rem] ${
+        open ? "max-lg:h-screen" : "h-auto"
+      } ${
         scrolled || open
           ? "bg-soy/90 backdrop-blur-md border-b border-sand/10"
           : "bg-gradient-to-b from-black/40 to-transparent"

@@ -38,10 +38,10 @@ export const primaryNav: NavItem[] = [
   { label: "Omakase", href: "/omakase" },
   { label: "After Dark", href: "/after-dark" },
   { label: "What's On", href: "/whats-on" },
-  { label: "Private Events", href: "/private-events" },
   { label: "Confessions", href: "/confessions" },
-  { label: "Gift Vouchers", href: "/gift-vouchers" },
-  { label: "Loyalty", href: "/loyalty" },
+  // { label: "Gift Vouchers", href: "/gift-vouchers" },
+  // { label: "Loyalty", href: "/loyalty" },
+  { label: "Contact", href: "/contact" },
 ];
 
 /** Secondary links surfaced in the footer. */

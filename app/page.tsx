@@ -3,7 +3,7 @@
 import { Section } from "@/components/ui/section";
 import ExperienceCards from "@/components/ui/white-cards";
 import OrangeCard from "@/components/ui/orange-cards";
-import HeroBanner from "@/components/ui/herobanner";
+// import HeroBanner from "@/components/ui/herobanner";
 import ImageSlider from "@/components/ui/image-slider";
 import { Button } from "@/components/ui/button";
 // import { Container } from "@/components/ui/container";
@@ -178,7 +178,7 @@ export default async function HomePage() {
                 Tell us what you&apos;re planning. We&apos;ll handle everything
                 else.
               </p>
-              <div className="relative text-center mt-7 overflow-hidden">
+              <div className="relative flex items-center justify-center text-center mt-7 overflow-hidden">
                 <Image
                   src="/View-food-menu.png"
                   alt=""
