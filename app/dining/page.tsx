@@ -1,20 +1,10 @@
-// // import { Hero } from "@/components/hero";;
-// // import { Marquee } from "@/components/marquee";
 import { Section } from "@/components/ui/section";
 import ExperienceCards from "@/components/ui/white-cards";
 import OrangeCard from "@/components/ui/orange-cards";
 import HeroBanner from "@/components/ui/herobanner";
 import ImageSlider from "@/components/ui/image-slider";
 import { Button } from "@/components/ui/button";
-// import { Container } from "@/components/ui/container";
-// import { ExperienceCard } from "@/components/experience-card";
-// import { EventCard } from "@/components/event-card";
-// import { MenuShowcase } from "@/components/menu-showcase";
-// import { ReservationCTA } from "@/components/reservation-cta";
-// import { Media } from "@/components/ui/media";
 import { getEvents } from "@/lib/wordpress";
-// import { foodHighlights, drinkHighlights } from "@/lib/content/menu";
-// import { site } from "@/lib/content/site";
 import Image from "next/image";
 
 const images = [
@@ -44,7 +34,7 @@ export default async function HomePage() {
 
       <Section className="bg-claret/30">
         <div className="">
-          <h1 className="font-migra text-white text-center text-5xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
+          <h1 className="font-migra text-white text-center text-4xl sm:text-5xl md:text-7xl lg:text-6xl leading-[1.05] tracking-[0.02em] px-5">
             Modern Japanese dining. Bayside&apos;s best kept secret.
           </h1>
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
@@ -88,12 +78,12 @@ export default async function HomePage() {
 
       <Section>
         <div className="flex justify-center">
-          <div className="relative w-full max-w-[540px] h-[540px] overflow-hidden">
+          <div className="relative w-full max-w-[540px] h-[350px] sm:h-[540px] overflow-hidden">
             <Image
               src="/Pink_Neon.png"
               alt="Dining Experience"
               fill
-              className="object-cover"
+              className="object-contain"
             />
           </div>
         </div>
@@ -143,71 +133,6 @@ export default async function HomePage() {
           />
         </div>
       </Section>
-
-      {/* What's On */}
-      {/* <Section className="bg-claret/30">
-        <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHeading
-            eyebrow="What's On"
-            title="The line-up changes. The standard doesn't."
-          />
-          <Button href="/whats-on" variant="ghost" size="sm">
-            See all events ›
-          </Button>
-        </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {whatsOn.map((event) => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
-      </Section> */}
-
-      {/* Menu */}
-      {/* <Section id="menu">
-        <MenuShowcase food={foodHighlights} drinks={drinkHighlights} />
-      </Section> */}
-
-      {/* Private dining / functions */}
-      {/* <Section className="bg-claret/30">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <Media ratio="aspect-[4/3]" label="Private Dining" />
-          <div>
-            <p className="eyebrow mb-4">Private Dining</p>
-            <h2 className="font-display text-4xl text-sand sm:text-5xl">
-              Do you have a function or event?
-            </h2>
-            <p className="mt-5 max-w-md text-base leading-relaxed text-sand/70">
-              Groups, celebrations, and big nights — tell us what you&apos;re
-              planning. We&apos;ll handle everything else.
-            </p>
-            <div className="mt-8">
-              <Button href="/reservations#events" variant="gold">
-                Plan Your Event
-              </Button>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-
-      {/* Instagram */}
-      {/* <Section className="text-center">
-        <p className="eyebrow mb-4">Instagram</p>
-        <a
-          href={site.social.instagram}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-display text-3xl text-sand hover:text-torii sm:text-4xl"
-        >
-          @liarliarbraeside
-        </a>
-        <Container className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <Media key={i} ratio="aspect-square" rounded="rounded-xl" />
-          ))}
-        </Container>
-      </Section> */}
-
-      {/* <ReservationCTA /> */}
     </>
   );
 }

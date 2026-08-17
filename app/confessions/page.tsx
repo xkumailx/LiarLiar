@@ -45,52 +45,55 @@ export default async function ConfessionsPage() {
           <h1 className="font-migra font-extrabold text-center text-[#FF3B11] text-5xl md:text-7xl lg:text-7xl tracking-[0.08em]">
             Confessions <br></br> & Cocktails
           </h1>
-          <p className="font-space leading-relaxed mt-[7em] px-[2em] text-[#F0E9DF]">
+          <p className="font-space leading-relaxed mt-[7em] px-0 sm:px-[2em] text-[#F0E9DF]">
             To confess. To declare love. In Japanese there&apos;s no difference
             between the two. Here there isn&apos;t either. We all have a few
             unspoken secrets. At Liar Liar they become part of the legend —
-            unleashed to the Night Gremlins and turned into cocktails.{" "}
+            unleashed to the Night Gremlins and turned into cocktails.
           </p>
         </div>
       </Section>
 
       <Section>
-        <div className="border border-[#FF3B11] rounded-[1em] p-[5em] mt-[5em]">
-          <p className="font-space font-extrabold text-center text-xs uppercase tracking-[0.2em] text-[#FF3B11]">
+        <div className="border border-[#FF3B11] rounded-[1em] p-5 sm:p-[5em] mt-8 sm:mt-[5em]">
+          <p className="font-space font-extrabold text-center text-[0.65rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#FF3B11]">
             Confession of the Month
           </p>
-          <h1 className="font-migra text-center mt-[0.5em] capitalize text-5xl md:text-7xl lg:text-6xl text-[#FF3B11] tracking-[0.04em]">
+
+          <h1 className="font-migra text-center mt-3 sm:mt-[0.5em] capitalize text-3xl sm:text-5xl md:text-7xl lg:text-6xl text-[#FF3B11] tracking-[0.02em] sm:tracking-[0.04em]">
             I ordered the most expensive thing on the menu and then googled what
             it was.
           </h1>
-          <h3 className="font-space text-base text-center mt-[2em] text-[#FF3B11]">
+
+          <h3 className="font-space text-sm sm:text-base text-center mt-5 sm:mt-[2em] text-[#FF3B11]">
             May 2025 / Anonymous
           </h3>
-          <div className="flex mt-[1em] justify-center">
+
+          <div className="flex mt-4 sm:mt-[1em] justify-center">
             <Image
               src="/confession-of-the-month.png"
               alt=""
               width={100}
               height={100}
-              className=" mt-[1em]"
+              className="mt-2 sm:mt-[1em]"
             />
           </div>
         </div>
       </Section>
 
-      <Section className="w-full px-6 md:px-10 lg:px-16">
-        <div className="flex flex-col lg:flex-row gap-6 items-stretch">
+      <Section className="w-full px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="flex flex-col lg:flex-row gap-5 sm:gap-6 items-stretch">
           {/* Content */}
-          <div className="w-full lg:w-1/2 border border-[#FF3B11] rounded-[1em] p-8 md:p-[5em] mt-0 ">
-            <p className="font-space font-extrabold text-center text-xs uppercase tracking-[0.2em] text-[#FF3B11]">
+          <div className="w-full lg:w-1/2 border border-[#FF3B11] rounded-[1em] p-5 sm:p-8 md:p-[5em] mt-0">
+            <p className="font-space font-extrabold text-center text-[0.65rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#FF3B11]">
               Cocktail of the Month
             </p>
 
-            <h3 className="font-migra font-extrabold text-center text-4xl md:text-5xl mt-7 text-[#FF3B11]">
+            <h3 className="font-migra font-extrabold text-center text-3xl sm:text-4xl md:text-5xl mt-5 sm:mt-7 text-[#FF3B11]">
               The Accidental Expert
             </h3>
 
-            <p className="font-space leading-relaxed text-center mt-[1em] px-0 md:px-[2em] text-[#FF3B11]">
+            <p className="font-space leading-relaxed text-center text-sm sm:text-base mt-4 sm:mt-[1em] px-0 md:px-[2em] text-[#FF3B11]">
               Inspired by our Caviar Sando. Our mixologist embraced the same
               scenario of this months confession — a quiet moment of panic, a
               Google search, and complete confidence in something unknown.
@@ -106,7 +109,7 @@ export default async function ConfessionsPage() {
               alt="The Accidental Expert"
               width={1920}
               height={1080}
-              className="w-full h-full object-cover"
+              className="w-full h-[300px] sm:h-[400px] lg:h-full object-cover"
             />
           </div>
         </div>

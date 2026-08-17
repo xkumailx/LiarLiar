@@ -23,19 +23,20 @@ export default function ExperienceCards({
       href={href}
       className="group block border border-white/100 rounded-xl overflow-hidden transition-all duration-300 hover:border-white"
     >
-      <div className="p-8">
-        <p className="font-space font-extrabold text-center text-xs uppercase tracking-[0.2em] text-[#F0E9DF]">
+      <div className="p-5 sm:p-8">
+        <p className="font-space font-extrabold text-center text-[0.65rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#F0E9DF]">
           {eyebrow}
         </p>
 
-        <h3 className="font-migra font-extrabold text-center text-5xl mt-7 text-[#F0E9DF]">
+        <h3 className="font-migra font-extrabold text-center text-3xl sm:text-5xl mt-4 sm:mt-7 text-[#F0E9DF] leading-[1.05] sm:leading-normal">
           {title}
         </h3>
 
-        <p className="font-space text-center leading-relaxed mt-7 text-[#F0E9DF] min-h-[120px]">
+        <p className="font-space text-center text-sm sm:text-base leading-relaxed mt-5 sm:mt-7 text-[#F0E9DF] min-h-0 sm:min-h-[120px]">
           {description}
         </p>
-        <div className="relative aspect-[16/10] mt-7 overflow-hidden">
+
+        <div className="relative aspect-[16/10] mt-5 sm:mt-7 overflow-hidden">
           <Image
             src={image}
             alt={imageAlt}
