@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 // import { Hero } from "@/components/hero";;
-import { Section, SectionHeading } from "@/components/ui/section";
-import { EventCard } from "@/components/event-card";
-import { ReservationCTA } from "@/components/reservation-cta";
-import { Media } from "@/components/ui/media";
-import { Button } from "@/components/ui/button";
-import { getEvents } from "@/lib/wordpress";
-import HeroBanner from "@/components/ui/herobanner";
+import { Section } from "@/components/ui/section";
+// import { EventCard } from "@/components/event-card";
+// import { ReservationCTA } from "@/components/reservation-cta";
+// import { Media } from "@/components/ui/media";
+// import { Button } from "@/components/ui/button";
+// import HeroBanner from "@/components/ui/herobanner";
 import EventsCards from "@/components/ui/events-cards";
 
 export const metadata: Metadata = {
@@ -17,12 +16,6 @@ export const metadata: Metadata = {
 };
 
 export default async function WhatsOnPage() {
-  const events = await getEvents();
-  const featured = events.find((e) => e.category === "featured");
-  const upcoming = events.filter((e) => e.category === "upcoming");
-  const weekly = events.filter((e) => e.category === "weekly");
-  const past = events.filter((e) => e.category === "past");
-
   return (
     <>
       <Section>

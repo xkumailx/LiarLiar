@@ -12,17 +12,18 @@ export const site = {
     "An unapologetic Japanese rooftop experience in Bayside. Dinner, cocktails, live music and late nights — Liar Liar, Braeside.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://liarliarbraeside.com.au",
   domain: "liarliarbraeside.com.au",
-  group: "The Chielli Hospitality Group",
+  // group: "The Chielli Hospitality Group",
   address: {
     line1: "Level 1, 248 Boundary Road",
     line2: "Braeside, VIC 3195",
     maps: "https://maps.google.com/?q=248+Boundary+Road+Braeside+VIC+3195",
   },
-  phone: "+61 3 0000 0000",
+  phone: " 03 9020 0888",
   email: "hello@liarliarbraeside.com.au",
   social: {
-    instagram: "https://instagram.com/liarliarbraeside",
-    facebook: "https://facebook.com/liarliarbraeside",
+    instagram:
+      "https://www.instagram.com/liarliar.braeside?igsi=MTJ5bjhrZmJtaWVubw==",
+    facebook: "https://www.facebook.com/share/1PtF5fH6nD/",
   },
   surcharges: ["10% surcharge on Sundays", "15% surcharge on public holidays"],
 } as const;
@@ -36,7 +37,7 @@ export type NavItem = {
 export const primaryNav: NavItem[] = [
   { label: "Dining", href: "/dining" },
   { label: "Omakase", href: "/omakase" },
-  { label: "After Dark", href: "/after-dark" },
+  { label: "After Party", href: "/after-party" },
   { label: "What's On", href: "/whats-on" },
   { label: "Confessions", href: "/confessions" },
   // { label: "Gift Vouchers", href: "/gift-vouchers" },
@@ -51,7 +52,7 @@ export const footerNav: NavItem[] = [
   { label: "Careers", href: "/careers" },
   { label: "DJs", href: "/djs" },
   { label: "Sponsors", href: "/sponsors" },
-  { label: "Contact", href: "/contact" },
+  // { label: "Contact", href: "/contact" },
 ];
 
 export const legalNav: NavItem[] = [
@@ -63,7 +64,7 @@ export type OpeningHour = { day: string; hours: string };
 
 export const openingHours: OpeningHour[] = [
   { day: "Wed & Thu", hours: "5:30pm – 11pm" },
-  { day: "Friday", hours: "3pm – Late" },
+  { day: "Friday", hours: "5:30pm – late" },
   { day: "Saturday", hours: "12pm – Late" },
-  { day: "Sunday", hours: "11:30am – 10pm" },
+  { day: "Sunday", hours: "12pm – late" },
 ];

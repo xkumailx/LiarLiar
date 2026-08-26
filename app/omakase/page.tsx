@@ -57,8 +57,8 @@ export default async function OmakasePage() {
             Trust the kitchen. The night will handle itself.
           </h1>
           <p className="font-space font-extrabold mt-4 text-center text-sm uppercase tracking-[0.2em] text-[#F0E9DF]">
-            Seating Times are 2 hour intervals. Bookings from 9:30pm Join to OUr
-            After party Program
+            Bookings are allocated a 2-hour seating time. Dinner bookings from
+            7:30pm are invited to stay for our After Party
           </p>
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
             Omakase / オマカセ / means &apos;I&apos;ll leave it up to you.&apos;
@@ -74,7 +74,7 @@ export default async function OmakasePage() {
               variant="bgsquare"
               size="sm"
             >
-              Reservations your seat
+              Reserve your seat
             </Button>
           </div>
         </div>
@@ -86,14 +86,14 @@ export default async function OmakasePage() {
             Leave it to us.
           </h1>
           <p className="font-space mt-6 mx-auto text-base leading-relaxed">
-            Liar Liar Omakase is an intimate seat experience. A curated journey
-            through elevated Japanese fusion that starts with precision and ends
-            in something electric. Seated at the chef&apos;s table, every dish
-            comes to life in front of you. Freshly prepared sashimi, theatrical
-            plating, and techniques drawn from the heart of Japanese culinary
-            tradition. Each sitting unfolds as a deliberate progression of 14–16
-            pieces, sourced globally, from refined and delicate through to bold
-            and alive.
+            Omakase at Liar Liar Braeside is an intimate dining experience. A
+            curated journey through elevated Japanese fusion that starts with
+            precision and ends in something electric. Seated at the chef&apos;s
+            table, every dish comes to life in front of you. Freshly prepared
+            sashimi, theatrical plating, and techniques drawn from the heart of
+            Japanese culinary traditions. Each sitting unfolds as a deliberate
+            progression of 14–16 pieces, sourced globally from refined and
+            delicate through to bold and alive.
           </p>
         </div>
       </Section>
@@ -173,7 +173,7 @@ export default async function OmakasePage() {
         <div className="w-full lg:w-[40%] mx-auto">
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed uppercase">
             Hours: WEDNESDAY – SATURDAY  Seating Times are 2 hour intervals.
-            Bookings from 9:30pm Join to OUr After party Program
+            Bookings from 7:30pm are invited to stay for our After Party.
           </p>
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed uppercase">
             Dietary: Please share any dietary requirements at least 24 hours
@@ -234,7 +234,7 @@ export default async function OmakasePage() {
         </div>
       </Section>
 
-      <Section>
+      {/* <Section>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <EventCard
             href="#"
@@ -252,7 +252,7 @@ export default async function OmakasePage() {
             date="Day, Date and Time"
           />
         </div>
-      </Section>
+      </Section> */}
 
       <Section>
         <CardText

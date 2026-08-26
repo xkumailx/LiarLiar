@@ -22,13 +22,16 @@ export function SiteFooter() {
             <br />
             {site.address.line2}
             <br />
-            <a href={`tel:${site.phone.replace(/\s/g, "")}`} className="hover:text-sand">
+            <a
+              href={`tel:${site.phone.replace(/\s/g, "")}`}
+              className="hover:text-sand"
+            >
               {site.phone}
             </a>
           </address>
-          <p className="mt-6 text-xs uppercase tracking-[0.2em] text-sand/45">
+          {/* <p className="mt-6 text-xs uppercase tracking-[0.2em] text-sand/45">
             {site.group}
-          </p>
+          </p> */}
         </div>
 
         {/* Opening hours */}
@@ -61,9 +64,9 @@ export function SiteFooter() {
         {/* Mailing list + social */}
         <div>
           <h2 className="eyebrow mb-5">Join the List</h2>
-          <p className="mb-4 text-sm text-sand/65">
+          {/* <p className="mb-4 text-sm text-sand/65">
             Launch night is coming. Secure your alibi early.
-          </p>
+          </p> */}
           <NewsletterForm />
           <div className="mt-6 flex gap-5 text-sm uppercase tracking-[0.16em]">
             <a
@@ -89,11 +92,16 @@ export function SiteFooter() {
       <div className="border-t border-sand/10">
         <Container className="flex flex-col gap-4 py-6 text-xs text-sand/45 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {site.name}. {site.surcharges.join(" · ")}.
+            © {new Date().getFullYear()} {site.name}.{" "}
+            {site.surcharges.join(" · ")}.
           </p>
           <div className="flex gap-6">
             {legalNav.map((item) => (
-              <Link key={item.href} href={item.href} className="hover:text-sand/80">
+              <Link
+                key={item.href}
+                href={item.href}
+                className="hover:text-sand/80"
+              >
                 {item.label}
               </Link>
             ))}

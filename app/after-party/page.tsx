@@ -28,7 +28,7 @@ export default async function AfterDarkPage() {
   return (
     <>
       <section className="relative w-full h-screen overflow-hidden">
-        <HeroBanner image="/after-dark.png" title={<>After Dark</>} />
+        <HeroBanner image="/afterparty.webp" title={<>After Party</>} />
       </section>
 
       <Section className="bg-claret/30">
@@ -44,8 +44,7 @@ export default async function AfterDarkPage() {
           </p>
           <p className="font-space text-center mx-auto text-base leading-relaxed">
             Designed for: Big birthdays. Group celebrations. Intimate evenings.
-            No occasion at all. Or anyone who wants the full VIP After Dark
-            experience.
+            Or anyone who wants the full VIP After Party experience.
           </p>
           <div className="mt-8 text-center">
             <Button
@@ -54,7 +53,7 @@ export default async function AfterDarkPage() {
               variant="bgsquare"
               size="sm"
             >
-              Reservations a bottle
+              Reserve a bottle
             </Button>
           </div>
         </div>
@@ -158,9 +157,7 @@ export default async function AfterDarkPage() {
               <p className="mt-5 sm:mt-8 space-y-6 font-space text-sm sm:text-base leading-relaxed text-[#F0E9DF]">
                 From the moment you arrive, every detail is taken care of. A
                 dedicated table, premium pours, and a personalised experience
-                from start to finish. Your table is held from [time]. Settle in,
-                and enjoy the lively atmosphere and let the night build around
-                you and your celebration.
+                from start to finish.
               </p>
 
               <p className="mt-5 sm:mt-8 space-y-6 font-space text-sm sm:text-base leading-relaxed text-[#F0E9DF]">
@@ -265,8 +262,8 @@ export default async function AfterDarkPage() {
 
               <div className="mt-5 sm:mt-7 font-space leading-relaxed text-[#F0E9DF]">
                 <h1 className="font-migra text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl tracking-[0.04em]">
-                  Groups of [X] or more — tell us what you&apos;re planning.
-                  We&apos;ll handle the rest.
+                  Groups of 20 or more — tell us what you&apos;re planning.
+                  We’ll handle the rest.
                 </h1>
               </div>
             </div>
@@ -306,7 +303,7 @@ export default async function AfterDarkPage() {
           </p>
 
           <p className="font-space mx-auto text-sm sm:text-base leading-relaxed">
-            Saturday — late night dining, DJs and dancing until 5am.
+            Saturday — late night dining, DJs and dancing until 1am.
           </p>
 
           <p className="font-space mx-auto text-sm sm:text-base leading-relaxed">

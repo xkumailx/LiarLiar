@@ -20,7 +20,10 @@ import type {
   Position,
 } from "@/lib/types";
 import { events as localEvents } from "@/lib/content/events";
-import { confessions as localConfessions, cocktails as localCocktails } from "@/lib/content/confessions";
+import {
+  confessions as localConfessions,
+  cocktails as localCocktails,
+} from "@/lib/content/confessions";
 import { positions as localPositions } from "@/lib/content/menu";
 
 const API_URL = process.env.WORDPRESS_API_URL?.replace(/\/$/, "");
@@ -136,13 +139,13 @@ function mapConfession(node: WPNode): Confession {
   };
 }
 
-export async function getConfessions(): Promise<Confession[]> {
-  const data = await wpFetch<WPNode[]>(
-    "/wp-json/wp/v2/confession?per_page=50&orderby=date&order=desc",
-  );
-  if (!data || data.length === 0) return localConfessions;
-  return data.map(mapConfession);
-}
+// export async function getConfessions(): Promise<Confession[]> {
+//   const data = await wpFetch<WPNode[]>(
+//     "/wp-json/wp/v2/confession?per_page=50&orderby=date&order=desc",
+//   );
+//   if (!data || data.length === 0) return localConfessions;
+//   return data.map(mapConfession);
+// }
 
 /* --------------------------------------------------------------- Cocktails */
 
@@ -179,10 +182,52 @@ function mapPosition(node: WPNode): Position {
   };
 }
 
+export function cleanWordPressContent(content: string): string {
+  return content
+    .replace(/\[\/?[^\]]+\]/g, "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&#8221;/g, '"')
+    .replace(/&#8220;/g, '"')
+    .replace(/&#8217;/g, "'")
+    .replace(/&#8216;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export async function getPositions(): Promise<Position[]> {
-  const data = await wpFetch<WPNode[]>(
-    "/wp-json/wp/v2/position?per_page=50",
-  );
+  const data = await wpFetch<WPNode[]>("/wp-json/wp/v2/position?per_page=50");
   if (!data || data.length === 0) return localPositions;
   return data.map(mapPosition);
+}
+
+export interface WordPressPost {
+  id: number;
+  date: string;
+  slug: string;
+  status: string;
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+}
+
+export async function getConfessions(): Promise<WordPressPost[]> {
+  const response = await fetch(
+    `${process.env.WORDPRESS_URL}/wp-json/wp/v2/posts?status=publish&per_page=100&orderby=date&order=desc`,
+    {
+      next: {
+        revalidate: 60,
+      },
+    },
+  );
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch confessions");
+  }
+
+  return response.json();
 }

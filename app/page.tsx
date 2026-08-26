@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 // import { MenuShowcase } from "@/components/menu-showcase";
 // import { ReservationCTA } from "@/components/reservation-cta";
 // import { Media } from "@/components/ui/media";
-import { getEvents } from "@/lib/wordpress";
 // import { foodHighlights, drinkHighlights } from "@/lib/content/menu";
 // import { site } from "@/lib/content/site";
 import Image from "next/image";
@@ -21,34 +20,29 @@ import EventCard from "@/components/ui/event-card";
 import EventsCardswb from "@/components/ui/events-cards-wb";
 
 const images = [
-  { src: "/Drink-1.jpg", alt: "Gallery 1" },
-  { src: "/Drink-2.png", alt: "Gallery 2" },
-  { src: "/Drink-3.png", alt: "Gallery 3" },
-  { src: "/Drink-4.png", alt: "Gallery 4" },
-  { src: "/Drink-5.png", alt: "Gallery 5" },
-  { src: "/Drink-1.jpg", alt: "Gallery 6" },
-  { src: "/Drink-2.png", alt: "Gallery 7" },
-  { src: "/Drink-3.png", alt: "Gallery 8" },
-  { src: "/Drink-4.png", alt: "Gallery 9" },
-  { src: "/Drink-5.png", alt: "Gallery 10" },
+  { src: "/dance.webp", alt: "Gallery 1" },
+  { src: "/Drink.webp", alt: "Gallery 2" },
+  { src: "/food.webp", alt: "Gallery 3" },
+  { src: "/dance1.webp", alt: "Gallery 4" },
+  { src: "/Drink1.webp", alt: "Gallery 5" },
+  { src: "/food1.webp", alt: "Gallery 6" },
+  { src: "/food2.webp", alt: "Gallery 7" },
+  { src: "/food3.webp", alt: "Gallery 8" },
+  // { src: "/Drink-4.png", alt: "Gallery 9" },
+  // { src: "/Drink-5.png", alt: "Gallery 10" },
 ];
 
 export default async function HomePage() {
-  const events = await getEvents();
-  const weekly = events.filter((e) => e.category === "weekly").slice(0, 3);
-  const featured = events.filter((e) => e.category === "featured").slice(0, 3);
-  const whatsOn = [...featured, ...weekly].slice(0, 3);
-
   return (
     <>
       <section className="bg-black">
         <div>
           <Image
-            src="/landing-page-banner.png"
+            src="/Venue.webp"
             alt=""
             width={1920}
             height={1080}
-            className="w-full h-auto object-cover"
+            className="w-full h-screen object-cover"
           />
         </div>
       </section>
@@ -60,7 +54,7 @@ export default async function HomePage() {
       <Section className="bg-claret/30">
         <div className="">
           <h1 className="font-migra text-white text-center text-5xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
-            Modern Japanese dinner & Disco.
+            Modern Japanese Dinner & Disco.
           </h1>
           <p className="font-space text-center mt-6 mx-auto text-base leading-relaxed">
             Japanese technique. Global ingredients. This is the full experience.
@@ -132,7 +126,7 @@ export default async function HomePage() {
             imageAlt="Private Dining"
             eyebrow="The Liar Liar Experience"
             title="Omakase"
-            description="Trust the kitchen. 14-16 courses, sourced globally, plated in front of you. The chef leads — something remarkable happens in between."
+            description="Trust the kitchen. 14-16 courses, sourced globally, plated in front of you. The chef leads the way — something remarkable happens in between."
           />
         </div>
       </Section>
@@ -145,7 +139,7 @@ export default async function HomePage() {
             imageAlt="Our Menu"
             eyebrow="Late Night Energy"
             title="After Dark"
-            description="When the lights drop, Liar Liar doesn't slow down — it ignites. DJs, late nights, and the kind of energy worth staying for."
+            description="Live DJs, live music and when the lights drop, Liar Liar doesn't slow down — it ignites. DJs, late nights, and the kind of energy worth staying for."
           />
 
           <ExperienceCards
@@ -166,7 +160,7 @@ export default async function HomePage() {
             className="group block border border-white/100 rounded-xl overflow-hidden transition-all duration-300 hover:border-white"
           >
             <div className="p-8">
-              <p className="font-space font-extrabold text-center text-xs uppercase tracking-[0.2em] text-[#F0E9DF]">
+              <p className="font-space font-extrabold text-center text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#F0E9DF]">
                 Do you Have a Function or Event?
               </p>
 
@@ -233,14 +227,14 @@ export default async function HomePage() {
             description="Your confessions unleashed to the Night Gremlins and maybe we’ll turn it into cocktail."
           />
 
-          <EventsCardswb
-            href="#"
-            image="/the-journey.png"
-            imageAlt="Private Dining"
-            eyebrow="Every Wednesday"
-            title="Yakitori Night"
-            description="$12 selected skewers & $20 selected cocktails."
-          />
+          {/* <EventsCardswb
+              href="#"
+              image="/the-journey.png"
+              imageAlt="Private Dining"
+              eyebrow="Every Wednesday"
+              title="Yakitori Night"
+              description="$12 selected skewers & $20 selected cocktails."
+            /> */}
 
           <EventsCardswb
             href="#"

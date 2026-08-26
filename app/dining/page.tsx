@@ -4,7 +4,6 @@ import OrangeCard from "@/components/ui/orange-cards";
 import HeroBanner from "@/components/ui/herobanner";
 import ImageSlider from "@/components/ui/image-slider";
 import { Button } from "@/components/ui/button";
-import { getEvents } from "@/lib/wordpress";
 import Image from "next/image";
 
 const images = [
@@ -21,10 +20,9 @@ const images = [
 ];
 
 export default async function HomePage() {
-  const events = await getEvents();
-  const weekly = events.filter((e) => e.category === "weekly").slice(0, 3);
-  const featured = events.filter((e) => e.category === "featured").slice(0, 3);
-  const whatsOn = [...featured, ...weekly].slice(0, 3);
+  // const weekly = events.filter((e) => e.category === "weekly").slice(0, 3);
+  // const featured = events.filter((e) => e.category === "featured").slice(0, 3);
+  // const whatsOn = [...featured, ...weekly].slice(0, 3);
 
   return (
     <>

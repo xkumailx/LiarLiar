@@ -4,6 +4,8 @@ import { Section } from "@/components/ui/section";
 import ConfessionCard from "@/components/ui/confession-card";
 import OrangeCard from "@/components/ui/orange-cards";
 import ImageSlider from "@/components/ui/image-slider";
+import ConfessionForm from "@/components/ConfessionForm";
+import { getConfessions, cleanWordPressContent } from "@/lib/wordpress";
 // import ImageSlider from "@/components/ui/image-slider";
 
 export const metadata: Metadata = {
@@ -26,6 +28,8 @@ const images = [
 ];
 
 export default async function ConfessionsPage() {
+  const confessions = await getConfessions();
+
   return (
     <>
       <Section className="">
@@ -249,6 +253,22 @@ export default async function ConfessionsPage() {
           />
           <ConfessionCard image="/confession-drink.png" />
         </div>
+      </Section>
+
+      <Section>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+          {confessions.map((confession) => (
+            <ConfessionCard
+              key={confession.id}
+              content={cleanWordPressContent(confession.content.rendered)}
+              Imagelogo="/confession-logo.png"
+            />
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <ConfessionForm />
       </Section>
 
       <section>
