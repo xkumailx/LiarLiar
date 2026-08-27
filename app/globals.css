@@ -151,3 +151,380 @@ body {
     scroll-behavior: auto;
   }
 }
+
+/* =========================================
+   LIAR LIAR - EVENT REQUEST FORM
+========================================= */
+
+.event-form {
+  background: #220715;
+  color: #f0e9df;
+  padding: 100px 0;
+}
+
+/* Main Form Container */
+.event-form #tripleseat_embed_form,
+.event-form #tripleseat_dynamic_embed_form,
+.event-form #dynamic_lead_form {
+  width: 100%;
+}
+
+.event-form #dynamic_lead_form {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Main Heading */
+.event-form .tripleseat-dlf-heading-h1 {
+  color: #ff3b11 !important;
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  letter-spacing: -0.04em;
+  font-family: var(--font-migra) !important;
+}
+
+/* Description */
+.event-form .tripleseat-dlf-text {
+  max-width: 650px;
+  color: rgba(240, 233, 223, 0.75);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 60px;
+}
+
+/* Section Headings */
+.event-form .tripleseat-dlf-heading-h3 {
+  color: #ff3b11 !important;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 60px 0 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-family: var(--font-migra) !important;
+}
+
+/* Form Field Group */
+.event-form .tripleseat-dlf-field-group {
+  margin-bottom: 24px;
+}
+
+/* Labels */
+.event-form .tripleseat-dlf-label {
+  display: block;
+  color: #f0e9df !important;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+
+/* Inputs, Selects & Textareas */
+.event-form .tripleseat-dlf-input {
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 18px;
+
+  background: transparent !important;
+  color: #f0e9df !important;
+
+  border: 1px solid rgba(240, 233, 223, 0.25) !important;
+  border-radius: 0 !important;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  outline: none;
+  box-shadow: none !important;
+
+  transition:
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+/* Placeholder */
+.event-form .tripleseat-dlf-input::placeholder {
+  color: rgba(240, 233, 223, 0.4) !important;
+}
+
+/* Focus */
+.event-form .tripleseat-dlf-input:focus {
+  border-color: #ff3b11 !important;
+  background: rgba(255, 59, 17, 0.04) !important;
+}
+
+/* Textarea */
+.event-form textarea.tripleseat-dlf-input {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Select */
+.event-form select.tripleseat-dlf-input {
+  cursor: pointer;
+}
+
+/* Date Input */
+.event-form input[type="date"] {
+  color-scheme: dark;
+}
+
+/* Number input */
+.event-form input[type="number"] {
+  appearance: textfield;
+}
+
+/* Name Fields */
+.event-form .tripleseat-dlf-name-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Phone Fields */
+.event-form .tripleseat-dlf-phone-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px;
+  gap: 12px;
+}
+
+/* Address Fields */
+.event-form .tripleseat-dlf-address-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Full Width Delivery Instructions */
+.event-form .tripleseat-dlf-address-field:has(textarea) {
+  grid-column: 1 / -1;
+}
+
+/* Help Text */
+.event-form .tripleseat-dlf-help-text,
+.event-form .tripleseat-dlf-char-count {
+  margin-top: 8px;
+  color: rgba(240, 233, 223, 0.5) !important;
+  font-size: 12px;
+}
+
+/* Error Messages */
+.event-form .tripleseat-dlf-error {
+  margin-top: 8px;
+  color: #ff3b11 !important;
+  font-size: 13px;
+}
+
+/* Checkbox */
+.event-form .tripleseat-dlf-checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.event-form .tripleseat-dlf-checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #ff3b11;
+  cursor: pointer;
+}
+
+.event-form .tripleseat-dlf-checkbox-label {
+  color: rgba(240, 233, 223, 0.8) !important;
+  font-size: 14px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.event-form .tripleseat-dlf-submit {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 180px;
+  min-height: 58px;
+  padding: 16px 36px;
+
+  background: #ff3b11 !important;
+  color: #220715 !important;
+
+  border: 1px solid #ff3b11 !important;
+  border-radius: 0 !important;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.event-form .tripleseat-dlf-submit:hover {
+  background: transparent !important;
+  color: #ff3b11 !important;
+  transform: translateY(-2px);
+}
+
+/* reCAPTCHA spacing */
+.event-form .tripleseat-dlf-captcha-container {
+  margin-top: 10px;
+}
+
+/* Hide unwanted/default spacing if any */
+.event-form br {
+  display: none;
+}
+
+/* =========================================
+   ALL TRIPLESEAT SELECT DROPDOWNS
+========================================= */
+
+.event-form .tripleseat-dlf-dropdown,
+.event-form select.tripleseat-dlf-input {
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 50px 14px 18px;
+
+  background-color: #220715 !important;
+  color: #f0e9df !important;
+
+  border: 1px solid rgba(240, 233, 223, 0.25) !important;
+  border-radius: 0 !important;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  cursor: pointer;
+  outline: none;
+
+  /* Remove default arrow */
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+
+  /* Custom orange arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23FF3B11' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") !important;
+
+  background-repeat: no-repeat !important;
+  background-position: right 18px center !important;
+  background-size: 18px !important;
+
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+/* All dropdown options */
+.event-form .tripleseat-dlf-dropdown option,
+.event-form select.tripleseat-dlf-input option {
+  background-color: #220715 !important;
+  color: #f0e9df !important;
+  font-size: 16px;
+}
+
+/* First placeholder option */
+.event-form .tripleseat-dlf-dropdown option[value=""],
+.event-form select.tripleseat-dlf-input option[value=""] {
+  color: rgba(240, 233, 223, 0.5) !important;
+}
+
+/* Disabled options */
+.event-form .tripleseat-dlf-dropdown option:disabled,
+.event-form select.tripleseat-dlf-input option:disabled {
+  color: rgba(240, 233, 223, 0.3) !important;
+  background-color: #16040a !important;
+}
+
+/* Focus state */
+.event-form .tripleseat-dlf-dropdown:focus,
+.event-form select.tripleseat-dlf-input:focus {
+  border-color: #ff3b11 !important;
+  background-color: rgba(255, 59, 17, 0.05) !important;
+}
+
+/* Firefox option hover/selected */
+.event-form .tripleseat-dlf-dropdown option:checked,
+.event-form select.tripleseat-dlf-input option:checked {
+  background-color: #ff3b11 !important;
+  color: #220715 !important;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+  .event-form {
+    padding: 70px 0;
+  }
+
+  .event-form .tripleseat-dlf-heading-h1 {
+    font-size: 48px;
+  }
+
+  .event-form .tripleseat-dlf-heading-h3 {
+    font-size: 24px;
+    margin-top: 45px;
+  }
+
+  .event-form .tripleseat-dlf-name-fields,
+  .event-form .tripleseat-dlf-address-fields {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .event-form .tripleseat-dlf-address-field:has(textarea) {
+    grid-column: auto;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+  .event-form {
+    padding: 55px 0;
+  }
+
+  .event-form .tripleseat-dlf-heading-h1 {
+    font-size: 38px;
+  }
+
+  .event-form .tripleseat-dlf-text {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .event-form .tripleseat-dlf-heading-h3 {
+    font-size: 21px;
+    margin: 40px 0 24px;
+  }
+
+  .event-form .tripleseat-dlf-phone-container {
+    grid-template-columns: 1fr;
+  }
+
+  .event-form .tripleseat-dlf-input {
+    min-height: 52px;
+    font-size: 15px;
+  }
+
+  .event-form .tripleseat-dlf-submit {
+    width: 100%;
+  }
+
+  .event-form .g-recaptcha {
+    transform: scale(0.85);
+    transform-origin: left top;
+  }
+}
