@@ -26,7 +26,7 @@ export default function EventForm() {
   }, []);
 
   return (
-    <Section className="event-form">
+    <Section className="event-form mt-[6em]">
       <div ref={containerRef} />
     </Section>
   );
