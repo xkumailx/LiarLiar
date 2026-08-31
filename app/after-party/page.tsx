@@ -335,19 +335,6 @@ export default async function AfterDarkPage() {
         </p>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
           <EventCard
-            href="#"
-            image="/osen.png"
-            imageAlt="Producer Sitting"
-            title="Event Name"
-            date="Day, Date and Time"
-          />
-
-          <EventCard
-            href="#"
-            image="/cocktails.png"
-            imageAlt="Collaboration Sitting"
-            title="Event Name"
-            date="Day, Date and Time"
           />
         </div>
       </Section>
