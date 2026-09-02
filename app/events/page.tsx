@@ -1,4 +1,5 @@
-import EventCard from "@/components/ui/event-card";
+import Events from "@/components/ui/event-card";
+// import EventCard from "@/components/ui/event-card";
 import { Section } from "@/components/ui/section";
 
 export default function EventsPage() {
@@ -34,7 +35,7 @@ export default function EventsPage() {
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 mt-[2em]">
-            <EventCard />
+            <Events />
           </div>
         </div>
       </Section>

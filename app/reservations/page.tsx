@@ -9,6 +9,7 @@ import Image from "next/image";
 import ReservationCards from "@/components/ui/reservation-cards";
 // import ExperienceCards from "@/components/ui/white-cards";
 import EventsCards from "@/components/ui/events-cards";
+import Reservation from "@/components/ui/reservation";
 // import EventsCards from "@/components/ui/events-cards";
 
 export const metadata: Metadata = {
@@ -102,6 +103,11 @@ export default function ReservationsPage() {
 
           {/* Right Spacer */}
           <div className="hidden lg:block col-span-2" />
+        </div>
+      </Section>
+      <Section>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <Reservation type="reservation" />
         </div>
       </Section>
 

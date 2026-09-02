@@ -14,7 +14,7 @@ export async function GET() {
       );
     }
 
-    const baseUrl = wordpressUrl.replace(/\/+$/, "");
+    const baseUrl = wordpressUrl.replace(/\/$/, "");
 
     const apiUrl = `${baseUrl}/wp-json/wp/v2/event?_embed=wp:featuredmedia,wp:term`;
 

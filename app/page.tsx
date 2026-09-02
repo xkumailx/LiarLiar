@@ -1,6 +1,7 @@
 // // import { Hero } from "@/components/hero";;
 // // import { Marquee } from "@/components/marquee";
 import { Section } from "@/components/ui/section";
+import Reservation from "@/components/ui/reservation";
 import ExperienceCards from "@/components/ui/white-cards";
 import OrangeCard from "@/components/ui/orange-cards";
 // import HeroBanner from "@/components/ui/herobanner";
@@ -16,8 +17,8 @@ import { Button } from "@/components/ui/button";
 // import { site } from "@/lib/content/site";
 import Image from "next/image";
 import Link from "next/dist/client/link";
-import EventCard from "@/components/ui/event-card";
-import EventsCardswb from "@/components/ui/events-cards-wb";
+import { Eventshome } from "@/components/ui/event-card";
+// import EventsCardswb from "@/components/ui/events-cards-wb";
 
 const images = [
   { src: "/dance.webp", alt: "Gallery 1" },
@@ -188,7 +189,7 @@ export default async function HomePage() {
 
       <Section>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <EventCard />
+          <Eventshome />
         </div>
         <div className="mt-[4em] text-center">
           <Button
@@ -201,8 +202,13 @@ export default async function HomePage() {
           </Button>
         </div>
       </Section>
-
       <Section>
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <Reservation type="homepage" />
+        </div>
+      </Section>
+
+      {/* <Section>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <EventsCardswb
             href="#"
@@ -213,14 +219,14 @@ export default async function HomePage() {
             description="Your confessions unleashed to the Night Gremlins and maybe we’ll turn it into cocktail."
           />
 
-          {/* <EventsCardswb
+          <EventsCardswb
               href="#"
               image="/the-journey.png"
               imageAlt="Private Dining"
               eyebrow="Every Wednesday"
               title="Yakitori Night"
               description="$12 selected skewers & $20 selected cocktails."
-            /> */}
+            />
 
           <EventsCardswb
             href="#"
@@ -231,7 +237,7 @@ export default async function HomePage() {
             description="2 hours of bottomless sushi, sips and live music. / $99pp /"
           />
         </div>
-      </Section>
+      </Section> */}
 
       <Section>
         <div className="">
