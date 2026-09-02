@@ -408,7 +408,7 @@ export default async function EventPage({
             </div>
             <Link
               href=""
-              className="mt-5 block items-center justify-center text-center w-full sm:w-auto bg-[#FF7254] px-6 sm:px-10 py-3 sm:py-4 font-space font-extrabold text-[0.65rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#220715] transition-all duration-300 hover:bg-[#ff876d]"
+              className="block items-center justify-center text-center w-full sm:w-auto bg-[#FF7254] px-6 sm:px-10 py-3 sm:py-4 font-space font-extrabold text-[0.65rem] sm:text-xs uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#220715] transition-all duration-300 hover:bg-[#ff876d]"
               style={{
                 borderWidth: "0.5px 2px 2px 0.5px",
                 borderStyle: "solid",

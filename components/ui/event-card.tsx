@@ -122,7 +122,7 @@ function EventsList({ taxonomy }: EventsListProps) {
                 )}
 
                 {/* Responsive Image */}
-                <div className="relative w-full h-[420px] sm:h-[500px] md:h-[600px] lg:h-[700px] xl:h-[750px] overflow-hidden">
+                <div className="relative w-full h-[350px] sm:h-[420px] md:h-[500px] lg:h-[600px] xl:h-[650px] overflow-hidden">
                   <Image
                     src={image}
                     alt={
