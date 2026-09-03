@@ -113,15 +113,10 @@ export default function Reservation({
           const reservationLink =
             reservation.acf?.reservation_field?.reservation_link?.url;
 
-          const href =
-            reservationLink && reservationLink !== "#"
-              ? reservationLink
-              : `/reservation/${reservation.slug}`;
-
           return (
             <Link
               key={reservation.id}
-              href={href}
+              href={reservationLink || "#"}
               target={
                 reservation.acf?.reservation_field?.reservation_link?.target ||
                 undefined

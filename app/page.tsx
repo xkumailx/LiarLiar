@@ -157,7 +157,7 @@ export default async function HomePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
           <Link
-            href="#"
+            href="/events"
             className="group block border border-white/100 rounded-xl overflow-hidden transition-all duration-300 hover:border-white"
           >
             <div className="p-8">
