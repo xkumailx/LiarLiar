@@ -198,9 +198,9 @@ export default async function OmakasePage() {
               href="#"
               image="/the-transition.png"
               imageAlt="Our Menu"
-              eyebrow="After Dark"
+              eyebrow="After Party"
               title="The transition"
-              description="When the omakase ends. The room doesn't. Stay for what comes next. Liar Liar After Dark Party"
+              description="When the omakase ends. The room doesn't. Stay for what comes next. Liar Liar After Party"
             />
           </div>
         </div>

@@ -15,7 +15,7 @@ import Reservation from "@/components/ui/reservation";
 export const metadata: Metadata = {
   title: "Reservations",
   description:
-    "Book your table at Liar Liar — dinner, omakase, after dark and bottle service. Braeside, Bayside.",
+    "Book your table at Liar Liar — dinner, omakase, after party and bottle service. Braeside, Bayside.",
 };
 
 export default function ReservationsPage() {
@@ -60,7 +60,7 @@ export default function ReservationsPage() {
             image="/Ultimate-experience.png"
             imageAlt="Omakase"
             // eyebrow="Omakase"
-            title="Reserve Dinner & After Dark"
+            title="Reserve Dinner & After Party"
             // description="Experience the art of Omakase dining with our chef's curated selection of dishes."
           />
 

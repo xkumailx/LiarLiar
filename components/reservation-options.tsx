@@ -17,7 +17,7 @@ export const reservationTypes: ReservationType[] = [
   },
   {
     id: "dinner-after-dark",
-    title: "Reserve Dinner & After Dark",
+    title: "Reserve Dinner & After Party",
     description: "Start with dinner, stay for the DJ. The full Liar Liar night.",
     cta: "Book the Night",
   },

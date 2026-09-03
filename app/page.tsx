@@ -139,7 +139,7 @@ export default async function HomePage() {
             image="/View-food-menu.png"
             imageAlt="Our Menu"
             eyebrow="Late Night Energy"
-            title="After Dark"
+            title="After Party"
             description="Live DJs, live music and when the lights drop, Liar Liar doesn't slow down — it ignites. DJs, late nights, and the kind of energy worth staying for."
           />
 

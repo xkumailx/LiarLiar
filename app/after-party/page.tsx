@@ -14,9 +14,9 @@ import EventCard from "@/components/ui/event-card";
 import Faq from "@/components/ui/FaqSection";
 
 export const metadata: Metadata = {
-  title: "After Dark",
+  title: "After Party",
   description:
-    "Liar Liar After Dark — VIP bottle service, resident DJs and late-night dancing in Bayside. When the lights drop, the room ignites.",
+    "Liar Liar After Party — VIP bottle service, resident DJs and late-night dancing in Bayside. When the lights drop, the room ignites.",
 };
 
 export default async function AfterDarkPage() {
@@ -86,7 +86,7 @@ export default async function AfterDarkPage() {
             </h1>
 
             <p className="font-space mt-4 sm:mt-6 mx-auto text-sm sm:text-base leading-relaxed">
-              The definite way to experience After Dark. Be the life of the
+              The definite way to experience After Party. Be the life of the
               party with a dedicated table, a curated bottle selection, and a
               night designed entirely around your group and celebration.
             </p>
@@ -331,11 +331,10 @@ export default async function AfterDarkPage() {
 
       <Section>
         <p className="font-space font-extrabold mb-8 text-base uppercase tracking-[0.2em] text-[#FF3B11]">
-          Upcoming Events / After Dark
+          Upcoming Events / After Party
         </p>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <EventCard
-          />
+          <EventCard />
         </div>
       </Section>
 

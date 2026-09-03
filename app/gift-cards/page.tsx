@@ -15,13 +15,6 @@ const amounts = ["$50", "$100", "$150", "$250"];
 export default function GiftCardsPage() {
   return (
     <>
-      {/* <Hero
-        eyebrow="Gift Vouchers"
-        title="Give the night."
-        subtitle="Dinner, drinks, omakase or the full After Dark experience — a Liar Liar gift card is the easy yes."
-        size="md"
-      /> */}
-
       <Section>
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <Media ratio="aspect-[4/3]" label="Gift Card" rounded="rounded-3xl" />

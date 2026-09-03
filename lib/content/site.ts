@@ -66,5 +66,5 @@ export const openingHours: OpeningHour[] = [
   { day: "Wed & Thu", hours: "5:30pm – 11pm" },
   { day: "Friday", hours: "5:30pm – late" },
   { day: "Saturday", hours: "12pm – Late" },
-  { day: "Sunday", hours: "12pm – late" },
+  { day: "Sunday", hours: "12pm – Late" },
 ];

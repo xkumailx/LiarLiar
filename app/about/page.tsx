@@ -39,10 +39,6 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* <Marquee
-        items={["Dinner", "Disco", "Omakase", "After Dark", "Braeside"]}
-      /> */}
-
       {/* The three experiences */}
       <Section>
         <SectionHeading eyebrow="The Experience" title="More than one venue." />
@@ -60,8 +56,8 @@ export default function AboutPage() {
             description="An intimate chef's progression. Trust the kitchen."
           />
           <ExperienceCard
-            href="/after-dark"
-            eyebrow="After Dark"
+            href="/after-party"
+            eyebrow="After Party"
             title="The Disco"
             description="DJs, dancing and bottle service until late."
           />
