@@ -8,6 +8,7 @@ import { Section } from "@/components/ui/section";
 // import { Button } from "@/components/ui/button";
 // import HeroBanner from "@/components/ui/herobanner";
 import EventsCards from "@/components/ui/events-cards";
+import EventsVenues from "@/components/ui/EventsVenues";
 
 export const metadata: Metadata = {
   title: "What's On",
@@ -52,6 +53,13 @@ export default async function WhatsOnPage() {
             description="14–16 courses sourced globally. Each one a deliberate progression from refined and delicate through to bold and electric."
           />
         </div>
+      </Section>
+
+      <Section>
+        <p className="font-space font-extrabold mb-[2.5em] text-base uppercase tracking-[0.2em] text-[#FF3B11]">
+          Weekly Rotation
+        </p>
+        <EventsVenues taxonomy="weekly-rotation" />
       </Section>
 
       <Section>
