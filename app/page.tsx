@@ -82,9 +82,9 @@ export default async function HomePage() {
           </p>
           <div className="mt-7 space-y-5 font-space text-center leading-relaxed text-[#F0E9DF]">
             <p className="mb-0">Wednesday &amp; Thursday 5:30pm—11pm</p>
-            <p className="mb-0">Friday 5:30pm—1am</p>
-            <p className="mb-0">Saturday 12pm—1am</p>
-            <p className="mb-0">Sunday 12pm—10pm</p>
+            <p className="mb-0">Friday 5:30pm—Late</p>
+            <p className="mb-0">Saturday 12pm—Late</p>
+            <p className="mb-0">Sunday 12pm—Late</p>
           </div>
         </div>
       </section>
@@ -113,7 +113,7 @@ export default async function HomePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
-            href="#"
+            href="/A3-latest-food-menu-(2nd sep 2026).pdf"
             image="/View-food-menu.png"
             imageAlt="Our Menu"
             eyebrow="Modern Japanese"
@@ -122,7 +122,7 @@ export default async function HomePage() {
           />
 
           <ExperienceCards
-            href="#"
+            href="/omakase"
             image="/View-drink-list.png"
             imageAlt="Private Dining"
             eyebrow="The Liar Liar Experience"
@@ -135,7 +135,7 @@ export default async function HomePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
-            href="#"
+            href="/after-party"
             image="/View-food-menu.png"
             imageAlt="Our Menu"
             eyebrow="Late Night Energy"
@@ -144,7 +144,7 @@ export default async function HomePage() {
           />
 
           <ExperienceCards
-            href="#"
+            href="/events"
             image="/View-drink-list.png"
             imageAlt="Private Dining"
             eyebrow="Own The Night"
@@ -248,9 +248,9 @@ export default async function HomePage() {
             description={
               <>
                 <p className="mb-0">Wednesday & Thursday 5:30pm—11pm</p>
-                <p className="mb-0">Friday 5:30pm—1am</p>
-                <p className="mb-0">Saturday 12pm—1am</p>
-                <p className="mb-0">Sunday 12pm—10pm</p>
+                <p className="mb-0">Friday 5:30pm—Late</p>
+                <p className="mb-0">Saturday 12pm—Late</p>
+                <p className="mb-0">Sunday 12pm—Late</p>
               </>
             }
             buttonText="Reserve a Table"
