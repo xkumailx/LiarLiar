@@ -43,6 +43,7 @@ export const primaryNav: NavItem[] = [
   // { label: "Gift Vouchers", href: "/gift-vouchers" },
   // { label: "Loyalty", href: "/loyalty" },
   { label: "Contact", href: "/contact" },
+  { label: "Events At Liar Liar", href: "/events-at-liar-liar" },
 ];
 
 /** Secondary links surfaced in the footer. */

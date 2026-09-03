@@ -7,7 +7,7 @@ export default function EventsPage() {
     <main className="bg-[#220715] text-[#F0E9DF]">
       {/* Hero */}
       <Section>
-        <div className="py-16 sm:py-20 lg:py-28">
+        <div className="py-16 sm:py-20 lg:pt-28 lg:pb-12">
           <h1 className="max-w-4xl font-migra text-4xl font-extrabold uppercase leading-[0.95] sm:text-5xl lg:text-7xl">
             Events
           </h1>
