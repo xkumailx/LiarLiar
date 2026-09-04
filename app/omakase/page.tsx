@@ -101,7 +101,7 @@ export default async function OmakasePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
-            href="#"
+            href="/book-your-venue"
             image="/Ultimate-experience.png"
             imageAlt="Our Menu"
             eyebrow="CHEF'S TABLE"
@@ -110,7 +110,7 @@ export default async function OmakasePage() {
           />
 
           <ExperienceCards
-            href="#"
+            href="/book-your-venue"
             image="/the-journey.png"
             imageAlt="Private Dining"
             eyebrow="THE FULL PROGRESSION"
@@ -155,7 +155,7 @@ export default async function OmakasePage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/menu"
+            href="/reservations"
             eyebrow=""
             title="Reservations"
             description={

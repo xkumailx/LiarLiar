@@ -7,7 +7,7 @@ import { Section } from "@/components/ui/section";
 // import { Media } from "@/components/ui/media";
 // import { Button } from "@/components/ui/button";
 // import HeroBanner from "@/components/ui/herobanner";
-import EventsCards from "@/components/ui/events-cards";
+// import EventsCards from "@/components/ui/events-cards";
 import EventsVenues from "@/components/ui/EventsVenues";
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default async function WhatsOnPage() {
         <p className="font-space font-extrabold mb-[2.5em] text-base uppercase tracking-[0.2em] text-[#FF3B11]">
           Featured
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <EventsCards
             href="#"
             image="/Ultimate-experience.png"
@@ -52,7 +52,8 @@ export default async function WhatsOnPage() {
             title="The Journey"
             description="14–16 courses sourced globally. Each one a deliberate progression from refined and delicate through to bold and electric."
           />
-        </div>
+        </div> */}
+        <EventsVenues taxonomy="featured" />
       </Section>
 
       <Section>
@@ -62,7 +63,7 @@ export default async function WhatsOnPage() {
         <EventsVenues taxonomy="weekly-rotation" />
       </Section>
 
-      <Section>
+      {/* <Section>
         <p className="font-space font-extrabold mb-[2.5em] text-base uppercase tracking-[0.2em] text-[#FF3B11]">
           Weekly Rotation
         </p>
@@ -94,13 +95,14 @@ export default async function WhatsOnPage() {
             description="The Counter. An intimate 14–16 seat experience. Just you, the chef, and whatever they've decided is worth your time tonight."
           />
         </div>
-      </Section>
+      </Section> */}
 
       <Section>
         <p className="font-space font-extrabold mb-[2.5em] text-base uppercase tracking-[0.2em] text-[#FF3B11]">
           Upcoming
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <EventsVenues taxonomy="upcoming" />
+        {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <EventsCards
             href="#"
             image="/Ultimate-experience.png"
@@ -127,14 +129,15 @@ export default async function WhatsOnPage() {
             title="Intimate Experience"
             description="The Counter. An intimate 14–16 seat experience. Just you, the chef, and whatever they've decided is worth your time tonight."
           />
-        </div>
+        </div> */}
       </Section>
 
       <Section>
         <p className="font-space font-extrabold mb-[2.5em] text-base uppercase tracking-[0.2em] text-[#FF3B11]">
           Past Events
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <EventsVenues taxonomy="past-events" />
+        {/* <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <EventsCards
             href="#"
             image="/Ultimate-experience.png"
@@ -161,7 +164,7 @@ export default async function WhatsOnPage() {
             title="Intimate Experience"
             description="The Counter. An intimate 14–16 seat experience. Just you, the chef, and whatever they've decided is worth your time tonight."
           />
-        </div>
+        </div> */}
       </Section>
     </>
   );

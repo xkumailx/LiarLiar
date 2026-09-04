@@ -179,7 +179,7 @@ export default async function ConfessionsPage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/menu"
+            href="/reservations"
             eyebrow=""
             title="Your Turn"
             description={

@@ -176,7 +176,7 @@ export default async function AfterDarkPage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/menu"
+            href="/reservations"
             eyebrow=""
             title="Reservations"
             description={
@@ -275,7 +275,7 @@ export default async function AfterDarkPage() {
                 borderStyle: "solid",
                 borderColor: "#220715",
               }}
-              href="/menu"
+              href="/reservations"
             >
               Reserve a Seat
             </a>

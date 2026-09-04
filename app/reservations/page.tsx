@@ -35,7 +35,7 @@ export default function ReservationsPage() {
             Reservations
           </h1>
           <Image
-            src="/grey-image.png"
+            src="/events-at-liar-liar.webp"
             alt="Reservations"
             width={500}
             height={300}
@@ -44,7 +44,7 @@ export default function ReservationsPage() {
         </div>
       </Section>
 
-      <Section>
+      {/* <Section>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <ReservationCards
             href="#"
@@ -73,14 +73,11 @@ export default function ReservationsPage() {
             // description="Join us for a relaxed lunch featuring fresh sushi and seasonal dishes."
           />
         </div>
-      </Section>
+      </Section> */}
 
-      <Section>
+      {/* <Section>
         <div className="grid grid-cols-12">
-          {/* Left Spacer */}
           <div className="hidden lg:block col-span-2" />
-
-          {/* Cards */}
           <div className="col-span-12 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-10">
             <EventsCards
               href="#"
@@ -90,7 +87,6 @@ export default function ReservationsPage() {
               title="Intimate Experience"
               description="The Counter. An intimate 14–16 seat experience. Just you, the chef, and whatever they've decided is worth your time tonight."
             />
-
             <EventsCards
               href="#"
               image="/Ultimate-experience.png"
@@ -100,12 +96,14 @@ export default function ReservationsPage() {
               description="The Counter. An intimate 14–16 seat experience. Just you, the chef, and whatever they've decided is worth your time tonight."
             />
           </div>
-
-          {/* Right Spacer */}
           <div className="hidden lg:block col-span-2" />
         </div>
-      </Section>
+      </Section> */}
+
       <Section>
+        <h1 className="font-migra text-white text-center mb-8 text-5xl md:text-7xl lg:text-6xl tracking-[0.04em] text-center">
+          Reservations
+        </h1>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Reservation type="reservation" />
         </div>

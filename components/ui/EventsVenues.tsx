@@ -160,7 +160,22 @@ export default function EventsVenues({ taxonomy }: EventsVenuesProps) {
   }
 
   if (!filteredItems.length) {
-    return <div className="py-10 text-center">No events or venues found.</div>;
+    return (
+      <div className="flex flex-col items-center justify-center px-6 text-center">
+        <div className="mb-6 h-px w-12 bg-[#ff7254]/60" />
+
+        <h3 className="font-migra text-3xl text-[#F0E9DF] md:text-4xl">
+          No results found
+        </h3>
+
+        <p className="mt-4 max-w-md text-sm leading-6 text-[#F0E9DF]/50 md:text-base">
+          There are currently no events or venues available. Please check back
+          again soon.
+        </p>
+
+        <div className="mt-6 h-px w-12 bg-[#ff7254]/60" />
+      </div>
+    );
   }
 
   return (
@@ -169,7 +184,7 @@ export default function EventsVenues({ taxonomy }: EventsVenuesProps) {
         const isEvent = item.type === "event";
         const data = item.data;
 
-        const href = isEvent ? `/events/${data.slug}` : `/testing`;
+        const href = isEvent ? `/events/${data.slug}` : `/book-your-venue`;
 
         return (
           <Link

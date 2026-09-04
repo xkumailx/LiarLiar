@@ -49,10 +49,10 @@ export const primaryNav: NavItem[] = [
 /** Secondary links surfaced in the footer. */
 export const footerNav: NavItem[] = [
   { label: "Confessions", href: "/confessions" },
-  { label: "Gift Cards", href: "/gift-cards" },
-  { label: "Careers", href: "/careers" },
-  { label: "DJs", href: "/djs" },
-  { label: "Sponsors", href: "/sponsors" },
+  // { label: "Gift Cards", href: "/gift-cards" },
+  // { label: "Careers", href: "/careers" },
+  // { label: "DJs", href: "/djs" },
+  // { label: "Sponsors", href: "/sponsors" },
   // { label: "Contact", href: "/contact" },
 ];
 

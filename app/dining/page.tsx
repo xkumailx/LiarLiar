@@ -20,14 +20,10 @@ const images = [
 ];
 
 export default async function HomePage() {
-  // const weekly = events.filter((e) => e.category === "weekly").slice(0, 3);
-  // const featured = events.filter((e) => e.category === "featured").slice(0, 3);
-  // const whatsOn = [...featured, ...weekly].slice(0, 3);
-
   return (
     <>
       <section className="relative w-full h-screen overflow-hidden">
-        <HeroBanner image="/Dining-Experience.webp" title="Dining Experience" />
+        <HeroBanner image="/Dining.webp" title="Dining Experience" />
       </section>
 
       <Section className="bg-claret/30">
@@ -90,7 +86,7 @@ export default async function HomePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
-            href="#"
+            href="/A3-latest-food-menu-(2nd%20sep%202026).pdf"
             image="/View-food-menu.png"
             imageAlt="Our Menu"
             eyebrow="Modern Japanese"
@@ -116,15 +112,15 @@ export default async function HomePage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/menu"
+            href="/reservations"
             eyebrow="Opening Hours"
             title="Reservations"
             description={
               <>
                 <p className="mb-0">Wednesday & Thursday 5:30pm—11pm</p>
-                <p className="mb-0">Friday 5:30pm—1am</p>
-                <p className="mb-0">Saturday 12pm—1am</p>
-                <p className="mb-0">Sunday 12pm—10pm</p>
+                <p className="mb-0">Friday 5:30pm—Late</p>
+                <p className="mb-0">Saturday 12pm—Late</p>
+                <p className="mb-0">Sunday 12pm—Late</p>
               </>
             }
             buttonText="Reserve a Table"

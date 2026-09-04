@@ -166,7 +166,7 @@ export default function VenueCard() {
 
                   {/* Enquire Button */}
                   <Link
-                    href="/testing"
+                    href="/book-your-venue"
                     className="
                       mt-[25px]
                       flex

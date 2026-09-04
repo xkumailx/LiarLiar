@@ -10,13 +10,16 @@ export default function EventsAtLiarLiarPage() {
   return (
     <>
       <section className="relative w-full h-screen overflow-hidden">
-        <HeroBanner image="/after-dark.png" title={<>Events At Liar Liar</>} />
+        <HeroBanner
+          image="/events-at-liar-liar.webp"
+          title={<>Events At Liar Liar</>}
+        />
       </section>
 
       <Section>
         <div className="">
           <OrangeCard
-            href="/menu"
+            href="/reservations"
             eyebrow=""
             title="Make it a night to remember"
             description={
