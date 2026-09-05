@@ -85,6 +85,14 @@ export function SiteFooter() {
             >
               Facebook
             </a>
+            <a
+              href={site.social.TicketCheckIcon}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sand/70 hover:text-sand"
+            >
+              TikTok
+            </a>
           </div>
         </div>
       </Container>

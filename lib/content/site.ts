@@ -5,6 +5,8 @@
  * lives in the WordPress data layer (see lib/wordpress.ts).
  */
 
+import { TicketCheckIcon } from "lucide-react";
+
 export const site = {
   name: "Liar Liar",
   tagline: "Modern Japanese Dinner & Disco",
@@ -24,6 +26,8 @@ export const site = {
     instagram:
       "https://www.instagram.com/liarliar.braeside?igsi=MTJ5bjhrZmJtaWVubw==",
     facebook: "https://www.facebook.com/share/1PtF5fH6nD/",
+    TicketCheckIcon:
+      "https://www.tiktok.com/@liarliar.braeside?_r=1&_t=ZS-99SxNO01SMP",
   },
   surcharges: ["10% surcharge on Sundays", "15% surcharge on public holidays"],
 } as const;
