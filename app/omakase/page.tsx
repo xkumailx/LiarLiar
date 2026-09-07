@@ -21,14 +21,14 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  { src: "/Omakase-1.webp", alt: "Gallery 1" },
-  { src: "/Omakase-2.webp", alt: "Gallery 2" },
-  { src: "/Omakase-3.webp", alt: "Gallery 3" },
-  { src: "/Omakase-4.webp", alt: "Gallery 4" },
-  { src: "/Omakase-5.webp", alt: "Gallery 5" },
-  { src: "/Omakase-6.webp", alt: "Gallery 6" },
-  { src: "/Omakase-7.webp", alt: "Gallery 7" },
-  { src: "/Omakase-8.webp", alt: "Gallery 8" },
+  { src: "/omakase-1.webp", alt: "Gallery 1" },
+  { src: "/omakase-2.webp", alt: "Gallery 2" },
+  { src: "/omakase-3.webp", alt: "Gallery 3" },
+  { src: "/omakase-4.webp", alt: "Gallery 4" },
+  { src: "/omakase-5.webp", alt: "Gallery 5" },
+  { src: "/omakase-6.webp", alt: "Gallery 6" },
+  { src: "/omakase-7.webp", alt: "Gallery 7" },
+  { src: "/omakase-8.webp", alt: "Gallery 8" },
 ];
 
 export default async function OmakasePage() {
