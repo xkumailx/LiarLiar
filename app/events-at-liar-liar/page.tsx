@@ -10,10 +10,7 @@ export default function EventsAtLiarLiarPage() {
   return (
     <>
       <section className="relative w-full h-screen overflow-hidden">
-        <HeroBanner
-          image="/events-at-liar-liar.webp"
-          title={<>Events At Liar Liar</>}
-        />
+        <HeroBanner image="/events-at.webp" title={<>Events At Liar Liar</>} />
       </section>
 
       <Section>

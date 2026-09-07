@@ -21,14 +21,17 @@ import { Eventshome } from "@/components/ui/event-card";
 // import EventsCardswb from "@/components/ui/events-cards-wb";
 
 const images = [
-  { src: "/dance.webp", alt: "Gallery 1" },
-  { src: "/Drink.webp", alt: "Gallery 2" },
-  { src: "/food.webp", alt: "Gallery 3" },
-  { src: "/dance1.webp", alt: "Gallery 4" },
-  { src: "/Drink1.webp", alt: "Gallery 5" },
-  { src: "/food1.webp", alt: "Gallery 6" },
-  { src: "/food2.webp", alt: "Gallery 7" },
-  { src: "/food3.webp", alt: "Gallery 8" },
+  { src: "/dance.webp", alt: "Dance" },
+  // { src: "/Drink.webp", alt: "Gallery 2" },
+  { src: "/food.webp", alt: "Modern Food" },
+  { src: "/dance1.webp", alt: "Fire Dance" },
+  // { src: "/Drink1.webp", alt: "Gallery 5" },
+  { src: "/food1.webp", alt: "Japanese Food" },
+  { src: "/food2.webp", alt: "Liar Liar Food" },
+  { src: "/food3.webp", alt: "Food" },
+  { src: "/dine.webp", alt: "Dine" },
+  { src: "/guest.webp", alt: "Guest" },
+  { src: "/sushi.webp", alt: "Sushi" },
   // { src: "/Drink-4.png", alt: "Gallery 9" },
   // { src: "/Drink-5.png", alt: "Gallery 10" },
 ];
@@ -47,10 +50,6 @@ export default async function HomePage() {
           />
         </div>
       </section>
-
-      {/* <section className="relative w-full h-screen overflow-hidden">
-        <HeroBanner image="/Dining-Experience.webp" title="Dining Experience" />
-      </section> */}
 
       <Section className="bg-claret/30">
         <div className="">
@@ -92,21 +91,16 @@ export default async function HomePage() {
       {/* Experiences */}
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {["/Liar-Liar.png", "/Liar-Liar-1.png", "/Liar-Liar-2.png"].map(
-            (src, index) => (
-              <div
-                key={index}
-                className="relative aspect-[4/5] overflow-hidden"
-              >
-                <Image
-                  src={src}
-                  alt={`Dining Experience ${index + 1}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ),
-          )}
+          {["/food4.webp", "/food5.webp", "/food6.webp"].map((src, index) => (
+            <div key={index} className="relative aspect-[4/5] overflow-hidden">
+              <Image
+                src={src}
+                alt={`Dining Experience ${index + 1}`}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
         </div>
       </Section>
 
@@ -114,7 +108,7 @@ export default async function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
             href="/A3-latest-food-menu-(2nd sep 2026).pdf"
-            image="/View-food-menu.png"
+            image="/modern-japanese-dining.webp"
             imageAlt="Our Menu"
             eyebrow="Modern Japanese"
             title="Dining"
@@ -123,7 +117,7 @@ export default async function HomePage() {
 
           <ExperienceCards
             href="/omakase"
-            image="/View-drink-list.png"
+            image="/the-liar-liar-omakase.webp"
             imageAlt="Private Dining"
             eyebrow="The Liar Liar Experience"
             title="Omakase"
@@ -136,7 +130,7 @@ export default async function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
             href="/after-party"
-            image="/View-food-menu.png"
+            image="/liar-liar-after-party.webp"
             imageAlt="Our Menu"
             eyebrow="Late Night Energy"
             title="After Party"
@@ -145,7 +139,7 @@ export default async function HomePage() {
 
           <ExperienceCards
             href="/events"
-            image="/View-drink-list.png"
+            image="/liar-liar-after-party1.webp"
             imageAlt="Private Dining"
             eyebrow="Own The Night"
             title="Rooftop VIP Bottle Service"
@@ -175,7 +169,7 @@ export default async function HomePage() {
               </p>
               <div className="relative flex items-center justify-center text-center mt-7 overflow-hidden">
                 <Image
-                  src="/View-food-menu.png"
+                  src="/private-dining-and-event.webp"
                   alt=""
                   width={540}
                   height={338}

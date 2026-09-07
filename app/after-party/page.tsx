@@ -72,7 +72,7 @@ export default async function AfterDarkPage() {
             </p>
 
             <Image
-              src="/signature-cocktails.png"
+              src="/after-signature.webp"
               alt="Our Menu"
               width={400}
               height={400}
@@ -92,7 +92,7 @@ export default async function AfterDarkPage() {
             </p>
 
             <Image
-              src="/reserve-a-night.png"
+              src="/after-party-reserve.webp"
               alt="Our Menu"
               width={400}
               height={400}
@@ -112,7 +112,7 @@ export default async function AfterDarkPage() {
             </p>
 
             <Image
-              src="/live-dj.png"
+              src="/after-party-dj.webp"
               alt="Our Menu"
               width={400}
               height={400}
@@ -168,7 +168,12 @@ export default async function AfterDarkPage() {
           </div>
 
           <div className="relative min-h-[380px] lg:min-h-[650px] mt-10 sm:mt-12 lg:mt-0">
-            <Image src="/rooftop.svg" alt="" fill className="object-cover" />
+            <Image
+              src="/rooftop-vip-service.webp"
+              alt=""
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
       </Section>

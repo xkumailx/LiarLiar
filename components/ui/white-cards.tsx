@@ -36,12 +36,13 @@ export default function ExperienceCards({
           {description}
         </p>
 
-        <div className="relative aspect-[16/10] mt-5 sm:mt-7 overflow-hidden">
+        <div className="relative mt-5 sm:mt-7 overflow-hidden">
           <Image
             src={image}
             alt={imageAlt}
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            width={1600}
+            height={1000}
+            className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       </div>

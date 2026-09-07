@@ -21,16 +21,14 @@ export const metadata: Metadata = {
 };
 
 const images = [
-  { src: "/Drink-1.jpg", alt: "Gallery 1" },
-  { src: "/Drink-2.png", alt: "Gallery 2" },
-  { src: "/Drink-3.png", alt: "Gallery 3" },
-  { src: "/Drink-4.png", alt: "Gallery 4" },
-  { src: "/Drink-5.png", alt: "Gallery 5" },
-  { src: "/Drink-1.jpg", alt: "Gallery 6" },
-  { src: "/Drink-2.png", alt: "Gallery 7" },
-  { src: "/Drink-3.png", alt: "Gallery 8" },
-  { src: "/Drink-4.png", alt: "Gallery 9" },
-  { src: "/Drink-5.png", alt: "Gallery 10" },
+  { src: "/Omakase-1.webp", alt: "Gallery 1" },
+  { src: "/Omakase-2.webp", alt: "Gallery 2" },
+  { src: "/Omakase-3.webp", alt: "Gallery 3" },
+  { src: "/Omakase-4.webp", alt: "Gallery 4" },
+  { src: "/Omakase-5.webp", alt: "Gallery 5" },
+  { src: "/Omakase-6.webp", alt: "Gallery 6" },
+  { src: "/Omakase-7.webp", alt: "Gallery 7" },
+  { src: "/Omakase-8.webp", alt: "Gallery 8" },
 ];
 
 export default async function OmakasePage() {
@@ -40,7 +38,7 @@ export default async function OmakasePage() {
     <>
       <section className="relative w-full h-screen overflow-hidden">
         <HeroBanner
-          image="/Omakase.svg"
+          image="/omkase-banner.webp"
           title={
             <>
               Omakase /オマカセ/
@@ -102,7 +100,7 @@ export default async function OmakasePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
             href="/book-your-venue"
-            image="/Ultimate-experience.png"
+            image="/omakase-intimate-exp.webp"
             imageAlt="Our Menu"
             eyebrow="CHEF'S TABLE"
             title="Intimate Experience"
@@ -111,7 +109,7 @@ export default async function OmakasePage() {
 
           <ExperienceCards
             href="/book-your-venue"
-            image="/the-journey.png"
+            image="/omakase-the-journey.webp"
             imageAlt="Private Dining"
             eyebrow="THE FULL PROGRESSION"
             title="The Journey"
@@ -124,7 +122,7 @@ export default async function OmakasePage() {
         <CardText
           title="Omakase Sessions"
           images={[
-            "/omakase-session.png",
+            "/omakase-session.webp",
             "/omakase-session.png",
             "/omakase-session.png",
           ]}
@@ -196,7 +194,7 @@ export default async function OmakasePage() {
           <div className="col-span-12 lg:col-span-6 lg:col-start-4">
             <ExperienceCards
               href="#"
-              image="/the-transition.png"
+              image="/the-transition.webp"
               imageAlt="Our Menu"
               eyebrow="After Party"
               title="The transition"
@@ -234,31 +232,11 @@ export default async function OmakasePage() {
         </div>
       </Section>
 
-      {/* <Section>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-          <EventCard
-            href="#"
-            image="/omakase-sitting.png"
-            imageAlt="Producer Sitting"
-            title="Event Name"
-            date="Day, Date and Time"
-          />
-
-          <EventCard
-            href="#"
-            image="/omakase-collaboration.png"
-            imageAlt="Collaboration Sitting"
-            title="Event Name"
-            date="Day, Date and Time"
-          />
-        </div>
-      </Section> */}
-
       <Section>
         <CardText
           title="The Tradition Behind the Experience"
           images={[
-            "/the-tradition.png",
+            "/the-tradition.webp",
             "/the-tradition.png",
             "/the-tradition.png",
           ]}
@@ -293,115 +271,6 @@ export default async function OmakasePage() {
       <section>
         <ImageSlider images={images} />
       </section>
-
-      {/* The counter */}
-      {/* <Section>
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          <Media ratio="aspect-[4/5]" label="The Counter" />
-          <div>
-            <p className="eyebrow mb-4">
-              Chef&apos;s Table · Intimate Experience
-            </p>
-            <h2 className="font-display text-4xl text-sand sm:text-5xl">
-              The Counter
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-sand/70">
-              An intimate 14–16 seat experience. Just you, the chef, and
-              whatever they&apos;ve decided is worth your time tonight. A
-              curated journey through elevated Japanese fusion that starts with
-              precision and ends in something electric.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-sand/70">
-              14–16 courses. Sourced globally. Each one a deliberate progression
-              from refined and delicate through to bold and electric.
-            </p>
-          </div>
-        </div>
-      </Section> */}
-
-      {/* Sessions */}
-      {/* <Section className="bg-claret/30">
-        <SectionHeading
-          eyebrow="Omakase Sessions"
-          title="The Journey"
-          intro="Two ways through the progression. Seating times run in 2-hour intervals."
-        />
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {sessions.map((s) => (
-            <div
-              key={s.name}
-              className="flex flex-col rounded-2xl border border-sand/10 bg-soy/40 p-8"
-            >
-              <div className="flex items-baseline justify-between gap-4">
-                <h3 className="font-display text-3xl text-sand">{s.name}</h3>
-                <span className="text-xl font-medium text-koki">{s.price}</span>
-              </div>
-              <p className="mt-3 text-sm text-sand/65">{s.detail}</p>
-              <p className="mt-1 text-sm text-sand/45">{s.add}</p>
-              <div className="mt-8">
-                <Button
-                  href="/reservations#omakase"
-                  variant="outline"
-                  size="sm"
-                >
-                  Book This Sitting
-                </Button>
-              </div>
-            </div>
-          ))}
-        </div>
-      </Section> */}
-
-      {/* The space + tradition */}
-      {/* <Section>
-        <div className="grid gap-12 lg:grid-cols-2">
-          <div>
-            <p className="eyebrow mb-4">The Space</p>
-            <h2 className="font-display text-3xl text-sand sm:text-4xl">
-              Perched above the night.
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-sand/70">
-              First floor, floor-to-ceiling glazing open to the night sky. Warm,
-              low-lit, and designed to draw you in — the counter is intimate by
-              design.
-            </p>
-          </div>
-          <div>
-            <p className="eyebrow mb-4">The Tradition</p>
-            <h2 className="font-display text-3xl text-sand sm:text-4xl">
-              The purest expression of hospitality.
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-sand/70">
-              In Japan, omakase is considered the purest expression of
-              hospitality. The chef decides everything — what you eat, in what
-              order, and why.
-            </p>
-          </div>
-        </div>
-      </Section> */}
-
-      {/* Upcoming omakase events */}
-      {/* {events.length > 0 ? (
-        <Section className="bg-claret/30">
-          <SectionHeading
-            eyebrow="Upcoming · Omakase"
-            title="Special Sittings"
-          />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {events.map((e) => (
-              <EventCard key={e.id} event={e} />
-            ))}
-          </div>
-        </Section>
-      ) : null} */}
-
-      {/* <ReservationCTA
-        eyebrow="Reservations"
-        title="Your Seat is Waiting."
-        lines={["Wednesday – Saturday", "Seatings in 2-hour intervals"]}
-        ctaLabel="Reserve Omakase"
-        ctaHref="/reservations#omakase"
-      /> */}
     </>
   );
 }
