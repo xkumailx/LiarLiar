@@ -30,7 +30,7 @@ const images = [
   { src: "/food2.webp", alt: "Liar Liar Food" },
   { src: "/food3.webp", alt: "Food" },
   { src: "/dine.webp", alt: "Dine" },
-  { src: "/guest.webp", alt: "Guest" },
+  { src: "/guest-1.webp", alt: "Guest" },
   { src: "/sushi.webp", alt: "Sushi" },
   // { src: "/Drink-4.png", alt: "Gallery 9" },
   // { src: "/Drink-5.png", alt: "Gallery 10" },
@@ -64,7 +64,8 @@ export default async function HomePage() {
           <div className="mt-8 text-center">
             <Button
               className="px-[1em]"
-              href="/reservations"
+              href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
+              external
               variant="bgsquare"
               size="sm"
             >

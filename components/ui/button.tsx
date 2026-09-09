@@ -98,7 +98,7 @@ export function Button(props: ButtonAsLink | ButtonAsButton) {
     }
 
     return (
-      <Link href={href} className={classes} onClick={onClick}>
+      <Link href={href} target="_blank" className={classes} onClick={onClick}>
         {children}
       </Link>
     );

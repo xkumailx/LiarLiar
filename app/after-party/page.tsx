@@ -92,7 +92,7 @@ export default async function AfterDarkPage() {
             </p>
 
             <Image
-              src="/after-party-reserve.webp"
+              src="/vip-bottle-service.webp"
               alt="Our Menu"
               width={400}
               height={400}
@@ -169,7 +169,7 @@ export default async function AfterDarkPage() {
 
           <div className="relative min-h-[380px] lg:min-h-[650px] mt-10 sm:mt-12 lg:mt-0">
             <Image
-              src="/rooftop-vip-service.webp"
+              src="/rooftop-bottle.webp"
               alt=""
               fill
               className="object-cover"

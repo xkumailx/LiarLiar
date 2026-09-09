@@ -24,7 +24,7 @@ const images = [
   { src: "/omakase-1.webp", alt: "Gallery 1" },
   { src: "/omakase-2.webp", alt: "Gallery 2" },
   { src: "/omakase-3.webp", alt: "Gallery 3" },
-  { src: "/omakase-4.webp", alt: "Gallery 4" },
+  { src: "/omakse-41.webp", alt: "Gallery 4" },
   { src: "/omakase-5.webp", alt: "Gallery 5" },
   { src: "/omakase-6.webp", alt: "Gallery 6" },
   { src: "/omakase-7.webp", alt: "Gallery 7" },
@@ -236,9 +236,9 @@ export default async function OmakasePage() {
         <CardText
           title="The Tradition Behind the Experience"
           images={[
-            "/the-tradition.webp",
-            "/the-tradition.png",
-            "/the-tradition.png",
+            "/tradition-1.webp",
+            "/tradition-1.webp",
+            "/tradition-1.webp",
           ]}
           content={
             <>
