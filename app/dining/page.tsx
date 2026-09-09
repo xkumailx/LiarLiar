@@ -7,16 +7,16 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 const images = [
-  { src: "/Drink-1.jpg", alt: "Gallery 1" },
-  { src: "/Drink-2.png", alt: "Gallery 2" },
-  { src: "/Drink-3.png", alt: "Gallery 3" },
-  { src: "/Drink-4.png", alt: "Gallery 4" },
-  { src: "/Drink-5.png", alt: "Gallery 5" },
-  { src: "/Drink-1.jpg", alt: "Gallery 6" },
-  { src: "/Drink-2.png", alt: "Gallery 7" },
-  { src: "/Drink-3.png", alt: "Gallery 8" },
-  { src: "/Drink-4.png", alt: "Gallery 9" },
-  { src: "/Drink-5.png", alt: "Gallery 10" },
+  { src: "/dining-gallery.webp", alt: "Gallery 1" },
+  { src: "/dining-gallery1.webp", alt: "Gallery 2" },
+  { src: "/dining-gallery2.webp", alt: "Gallery 3" },
+  { src: "/dining-gallery3.webp", alt: "Gallery 4" },
+  { src: "/dining-gallery4.webp", alt: "Gallery 5" },
+  { src: "/dining-gallery5.webp", alt: "Gallery 6" },
+  { src: "/dining-gallery6.webp", alt: "Gallery 7" },
+  { src: "/dining-gallery7.webp", alt: "Gallery 8" },
+  { src: "/dining-gallery8.webp", alt: "Gallery 9" },
+  { src: "/dining-gallery9.webp", alt: "Gallery 10" },
 ];
 
 export default async function HomePage() {
@@ -52,7 +52,7 @@ export default async function HomePage() {
       {/* Experiences */}
       <Section>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {["/Liar-Liar.png", "/Liar-Liar-1.png", "/Liar-Liar-2.png"].map(
+          {["/Dining4.webp", "/Dining2.webp", "/Dining1.webp"].map(
             (src, index) => (
               <div
                 key={index}
@@ -87,7 +87,7 @@ export default async function HomePage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
             href="/A3-latest-food-menu-(2nd%20sep%202026).pdf"
-            image="/View-food-menu.png"
+            image="/food-menu1.webp"
             imageAlt="Our Menu"
             eyebrow="Modern Japanese"
             title="View Food Menu"
@@ -96,7 +96,7 @@ export default async function HomePage() {
 
           <ExperienceCards
             href="#"
-            image="/View-drink-list.png"
+            image="/dining-drink-list.webp"
             imageAlt="Private Dining"
             eyebrow="Signature Drinks"
             title="View Drinks List"
