@@ -181,7 +181,7 @@ export default async function AfterDarkPage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/reservations"
+            href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
             eyebrow=""
             title="Reservations"
             description={

@@ -112,7 +112,7 @@ export default async function HomePage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="/reservations"
+            href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
             eyebrow="Opening Hours"
             title="Reservations"
             description={
