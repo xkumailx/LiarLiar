@@ -74,11 +74,12 @@ export default function EventsAtLiarLiarPage() {
         <div className="mt-8 text-center">
           <Button
             className="px-[1em]"
-            href="/menus"
+            href="/liarliar-packages.pdf"
+            external
             variant="bgsquare"
             size="sm"
           >
-            Menus
+            Packages
           </Button>
         </div>
       </Section>

@@ -66,7 +66,11 @@ export function SiteHeader() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button href="/reservations" variant="square" size="sm">
+          <Button
+            href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
+            variant="square"
+            size="sm"
+          >
             Reservations
           </Button>
         </div>
