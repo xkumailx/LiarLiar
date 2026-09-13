@@ -13,6 +13,10 @@ interface Venue {
     rendered: string;
   };
 
+  excerpt: {
+    rendered: string;
+  };
+
   acf?: {
     venue_fields?: {
       seats?: string;
@@ -163,6 +167,22 @@ export default function VenueCard() {
                   >
                     {decodeHtml(venueType)}
                   </p>
+
+                  {/* Excerpt */}
+                  {/* <div
+                    className="
+    mx-auto
+    mt-[20px]
+    max-w-[320px]
+    font-space
+    text-[12px]
+    leading-[1.6]
+    text-[#F0E9DF]/80
+  "
+                    dangerouslySetInnerHTML={{
+                      __html: venue.excerpt.rendered,
+                    }}
+                  /> */}
 
                   {/* Enquire Button */}
                   <Link
