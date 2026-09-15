@@ -49,7 +49,7 @@ export default async function AfterDarkPage() {
           <div className="mt-8 text-center">
             <Button
               className="px-[1em]"
-              href="/reservations"
+              href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
               variant="bgsquare"
               size="sm"
             >

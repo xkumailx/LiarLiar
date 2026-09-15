@@ -186,26 +186,26 @@ export default function VenueCard() {
 
                   {/* Enquire Button */}
                   <Link
-                    href="/book-your-venue"
+                    href={`/venue/${venue.slug}`}
                     className="
-                      mt-[25px]
-                      flex
-                      h-[38px]
-                      w-full
-                      items-center
-                      justify-center
-                      bg-[#ff7254]
-                      px-4
-                      font-space
-                      text-[9px]
-                      font-medium
-                      uppercase
-                      tracking-[0.02em]
-                      text-black
-                      transition-opacity
-                      duration-300
-                      hover:opacity-80
-                    "
+    mt-[25px]
+    flex
+    h-[38px]
+    w-full
+    items-center
+    justify-center
+    bg-[#ff7254]
+    px-4
+    font-space
+    text-[9px]
+    font-medium
+    uppercase
+    tracking-[0.02em]
+    text-black
+    transition-opacity
+    duration-300
+    hover:opacity-80
+  "
                   >
                     Enquire About This Space
                   </Link>

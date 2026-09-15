@@ -44,7 +44,7 @@ const page = () => {
             <div className="mt-8 flex flex-col">
               <Button
                 className="px-[1em]"
-                href="/reservations"
+                href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
                 variant="pinkbtn"
                 size="sm"
               >
@@ -53,7 +53,7 @@ const page = () => {
 
               <Button
                 className="px-[1em]"
-                href="/reservations"
+                href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
                 variant="bgpurplesquare"
                 size="sm"
               >
@@ -61,7 +61,7 @@ const page = () => {
               </Button>
             </div>
             <Link
-              href="/menu"
+              href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
               className="mt-3 flex w-full items-center justify-between border-t border-[#F0E9DF]/50 pt-1 font-space text-xs uppercase tracking-[0.08em] text-[#F0E9DF] transition-opacity hover:opacity-80"
             >
               <span>View Menu (Sub CTA)</span>
