@@ -105,6 +105,46 @@ export default async function HomePage() {
         </div>
       </Section>
 
+      <Section className="bg-[#220715] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+        <div className="mx-auto max-w-[1200px] text-center">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#ff6a55]">
+            Explore Our Menus
+          </p>
+
+          <h2 className="font-migra mb-4 text-4xl font-bold text-[#f0e9df] md:text-5xl lg:text-6xl">
+            Something For Every Taste
+          </h2>
+
+          <p className="mx-auto mb-12 max-w-2xl text-base leading-7 text-[#f0e9df]/75 md:text-lg">
+            From delicious food to sushi and refreshing drinks, explore
+            everything Liar Liar has to offer.
+          </p>
+
+          <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
+            <a
+              href="/food-menu"
+              className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
+            >
+              <span>Food Menu</span>
+            </a>
+
+            <a
+              href="/sip-n-sushi-menu"
+              className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
+            >
+              <span>Sip n Sushi Menu</span>
+            </a>
+
+            <a
+              href="/drinks-menu"
+              className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
+            >
+              <span>Drinks Menu</span>
+            </a>
+          </div>
+        </div>
+      </Section>
+
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
