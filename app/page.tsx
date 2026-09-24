@@ -133,7 +133,8 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             <a
-              href="/food-menu"
+              href="/Liar-Liar-Menu.pdf"
+              target="_blank"
               className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
             >
               <span>Food Menu</span>
@@ -141,13 +142,15 @@ export default async function HomePage() {
 
             <a
               href="/sip-n-sushi-menu"
+              target="_blank"
               className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
             >
               <span>Sip n Sushi Menu</span>
             </a>
 
             <a
-              href="/drinks-menu"
+              href="/Liar-Liar-Drinks.pdf"
+              target="_blank"
               className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
             >
               <span>Drinks Menu</span>
