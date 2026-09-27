@@ -27,7 +27,12 @@ export default function EventForm() {
 
   return (
     <Section className="event-form mt-[6em]">
-      <div ref={containerRef} />
+      <div
+        ref={containerRef}
+        id="tripleseat-form"
+        className="w-full"
+        style={{ minHeight: "500px" }}
+      />
     </Section>
   );
 }

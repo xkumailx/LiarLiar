@@ -95,7 +95,7 @@ export default async function HomePage() {
           />
 
           <ExperienceCards
-            href="#"
+            href="Liar-Liar-Drinks.pdf"
             image="/dining-drink-list.webp"
             imageAlt="Private Dining"
             eyebrow="Signature Drinks"
