@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+
 import {
   Space_Grotesk,
   Cormorant_Garamond,
   Hanken_Grotesk,
 } from "next/font/google";
+
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -53,10 +56,18 @@ export default function RootLayout({
       <body
         className={`${migra.variable} min-h-full flex flex-col bg-soy text-sand`}
       >
+        {/* Google reCAPTCHA Enterprise */}
+        <Script
+          src="https://www.google.com/recaptcha/enterprise.js?render=6LdnMdItAAAAAHsWcj6t1OloUhXfzspP-9nLNTQC"
+          strategy="afterInteractive"
+        />
+
         <PageTransition />
 
         <SiteHeader />
+
         <main className="flex-1">{children}</main>
+
         <SiteFooter />
       </body>
     </html>
