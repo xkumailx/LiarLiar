@@ -116,7 +116,7 @@ export default async function HomePage() {
         </div>
       </Section>
 
-      {/* <Section className="bg-[#220715] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
+      <Section className="bg-[#220715] px-6 py-20 md:px-10 lg:px-16 lg:py-28">
         <div className="mx-auto max-w-[1200px] text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#ff6a55]">
             Explore Our Menus
@@ -157,7 +157,7 @@ export default async function HomePage() {
             </a>
           </div>
         </div>
-      </Section> */}
+      </Section>
 
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

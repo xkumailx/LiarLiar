@@ -57,10 +57,10 @@ export default function RootLayout({
         className={`${migra.variable} min-h-full flex flex-col bg-soy text-sand`}
       >
         {/* Google reCAPTCHA Enterprise */}
-        <Script
+        {/* <Script
           src="https://www.google.com/recaptcha/enterprise.js?render=6LdnMdItAAAAAHsWcj6t1OloUhXfzspP-9nLNTQC"
           strategy="afterInteractive"
-        />
+        /> */}
 
         <PageTransition />
 
