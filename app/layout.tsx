@@ -37,7 +37,7 @@ const hanken = Hanken_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} — Modern Japanese Dinner & Disco`,
+    default: `${site.name} — Modern Japanese Restaurant and Bar. Walk ins welcome anytime!`,
     template: `%s — ${site.name}`,
   },
   description: site.description,

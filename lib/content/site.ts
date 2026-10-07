@@ -9,7 +9,7 @@ import { TicketCheckIcon } from "lucide-react";
 
 export const site = {
   name: "Liar Liar",
-  tagline: "Modern Japanese Dinner & Disco",
+  tagline: "Modern Japanese Restaurant and Bar. Walk ins welcome anytime!",
   description:
     "An unapologetic Japanese rooftop experience in Bayside. Dinner, cocktails, live music and late nights — Liar Liar, Braeside.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://liarliarbraeside.com.au",

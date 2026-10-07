@@ -89,7 +89,7 @@ export default async function HomePage() {
 
       <section>
         <div>
-          <p className=" font-space font-extrabold text-center text-base uppercase text-[#F0E9DF]">
+          <p className="mt-10 font-space font-extrabold text-center text-base uppercase text-[#F0E9DF]">
             Opening Hours
           </p>
           <div className="mt-7 space-y-5 font-space text-center leading-relaxed text-[#F0E9DF]">
