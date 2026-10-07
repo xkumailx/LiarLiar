@@ -40,13 +40,14 @@ export default async function HomePage() {
   return (
     <>
       <section className="bg-black">
-        <div>
-          <Image
-            src="/Venue.webp"
-            alt=""
-            width={1920}
-            height={1080}
-            className="w-full h-screen object-cover"
+        <div className="relative w-full h-screen">
+          <video
+            src="/Liar-Liar-Vid.mov"
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
