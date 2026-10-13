@@ -65,7 +65,7 @@ export default async function HomePage() {
           <div className="mt-8 text-center">
             <Button
               className="px-[1em]"
-              href="/Liar-Liar-Menu.pdf"
+              href="/A3-latest-food-menu-(2nd%20sep%202026).pdf"
               external
               variant="bgsquare"
               size="sm"
@@ -134,7 +134,7 @@ export default async function HomePage() {
 
           <div className="grid grid-cols-1 gap-5 md:grid-cols-3">
             <a
-              href="/Liar-Liar-Menu.pdf"
+              href="/A3-latest-food-menu-(2nd%20sep%202026).pdf"
               target="_blank"
               className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
             >
@@ -142,7 +142,7 @@ export default async function HomePage() {
             </a>
 
             <a
-              href="/sip-n-sushi-menu"
+              href="/Sip-&-Sushi-Menu.pdf"
               target="_blank"
               className="font-migra group flex min-h-[120px] items-center justify-center rounded-none bg-[#ff6a55] px-8 py-7 text-xl font-bold uppercase tracking-wide text-[#f0e9df] transition-all duration-300 hover:-translate-y-2 hover:bg-[#f0e9df] hover:text-[#220715]"
             >
