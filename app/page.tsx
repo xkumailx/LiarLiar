@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/dist/client/link";
 import { Eventshome } from "@/components/ui/event-card";
+import MenuTabs from "@/components/ui/menu-tabs";
 // import EventsCardswb from "@/components/ui/events-cards-wb";
 
 const images = [
@@ -51,6 +52,107 @@ export default async function HomePage() {
           />
         </div>
       </section>
+
+      {/* NEW SECTION 1: INTRODUCTION */}
+      <Section className="bg-[#220715] px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-4xl text-center">
+          <p className="mb-4 font-space text-sm uppercase tracking-[0.25em] text-[#FF6A55]">
+            Welcome to Liar Liar
+          </p>
+
+          <h2 className="font-migra text-4xl text-[#F0E9DF] md:text-6xl">
+            Modern Japanese Dining & Disco
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-3xl font-space text-base leading-8 text-[#F0E9DF]/80 md:text-lg">
+            Japanese technique. Global ingredients. An experience that moves
+            from exceptional dining to unforgettable late-night energy. Discover
+            fresh sushi, robata-grilled dishes, signature drinks, private dining
+            and vibrant rooftop experiences at Liar Liar.
+          </p>
+        </div>
+      </Section>
+
+      {/* NEW SECTION 2: GALLERY CAROUSEL */}
+      <Section className="bg-[#220715] px-0 py-8 md:py-12">
+        <div className="mx-auto mb-8 max-w-6xl px-6 text-center">
+          <p className="font-space text-sm uppercase tracking-[0.25em] text-[#FF6A55]">
+            A Taste of Liar Liar
+          </p>
+
+          <h2 className="mt-3 font-migra text-4xl text-[#F0E9DF] md:text-5xl">
+            Experience the Atmosphere
+          </h2>
+        </div>
+
+        <ImageSlider images={images} />
+      </Section>
+
+      {/* NEW SECTION 3: MULTI-EVENT SPACE */}
+      <Section className="bg-[#220715] px-6 py-16 md:py-24">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
+          <div className="relative aspect-[4/3] overflow-hidden">
+            <Image
+              src="/private-dining-and-event.webp"
+              alt="Liar Liar private dining and event space"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div>
+            <p className="mb-4 font-space text-sm uppercase tracking-[0.25em] text-[#FF6A55]">
+              More Than Dining
+            </p>
+
+            <h2 className="font-migra text-4xl text-[#F0E9DF] md:text-5xl">
+              A Space for Every Occasion
+            </h2>
+
+            <p className="mt-6 font-space leading-8 text-[#F0E9DF]/80">
+              From intimate dinners and private celebrations to corporate
+              functions, special occasions and rooftop parties, Liar Liar offers
+              a versatile setting for memorable experiences. Bring your people
+              together for exceptional food, drinks and an atmosphere that
+              carries the night.
+            </p>
+
+            <div className="mt-8">
+              <Button
+                href="/events"
+                variant="bgsquare"
+                size="sm"
+                className="px-[2em]"
+              >
+                Explore Events
+              </Button>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* NEW SECTION 4: MENU TABS */}
+      <Section className="bg-[#220715] px-6 py-16 md:py-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10 text-center">
+            <p className="mb-4 font-space text-sm uppercase tracking-[0.25em] text-[#FF6A55]">
+              Food & Drinks
+            </p>
+
+            <h2 className="font-migra text-4xl text-[#F0E9DF] md:text-6xl">
+              Discover Our Menus
+            </h2>
+
+            <p className="mx-auto mt-5 max-w-2xl font-space leading-7 text-[#F0E9DF]/75">
+              Explore the flavours, drinks and experiences that make every visit
+              to Liar Liar unique.
+            </p>
+          </div>
+
+          <MenuTabs />
+        </div>
+      </Section>
 
       <Section className="bg-claret/30">
         <div className="">
