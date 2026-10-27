@@ -67,7 +67,7 @@ export function SiteHeader() {
 
         <div className="hidden lg:block">
           <Button
-            href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
+            href="https://www.sevenrooms.com/explore/liarliarbraeside/reservations/create/search/"
             variant="square"
             size="sm"
           >

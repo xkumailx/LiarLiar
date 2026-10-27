@@ -86,7 +86,7 @@ export default async function HomePage() {
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ExperienceCards
-            href="/A3-latest-food-menu-(2nd%20sep%202026).pdf"
+            href="/A3-latest-food-menu-(2nd-sep-2026).pdf"
             image="/food-menu1.webp"
             imageAlt="Our Menu"
             eyebrow="Modern Japanese"
@@ -112,7 +112,7 @@ export default async function HomePage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
+            href="https://www.sevenrooms.com/explore/liarliarbraeside/reservations/create/search/"
             eyebrow="Opening Hours"
             title="Reservations"
             description={

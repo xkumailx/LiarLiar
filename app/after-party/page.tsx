@@ -49,7 +49,7 @@ export default async function AfterDarkPage() {
           <div className="mt-8 text-center">
             <Button
               className="px-[1em]"
-              href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
+              href="https://www.sevenrooms.com/explore/liarliarbraeside/reservations/create/search/"
               variant="bgsquare"
               size="sm"
             >
@@ -181,7 +181,7 @@ export default async function AfterDarkPage() {
       <Section>
         <div className="">
           <OrangeCard
-            href="https://www.opentable.com.au/restaurant/profile/279680?shareReferrer=ios-share"
+            href="https://www.sevenrooms.com/explore/liarliarbraeside/reservations/create/search/"
             eyebrow=""
             title="Reservations"
             description={
