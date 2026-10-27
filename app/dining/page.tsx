@@ -5,6 +5,7 @@ import HeroBanner from "@/components/ui/herobanner";
 import ImageSlider from "@/components/ui/image-slider";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import MenuFeatureSection from "@/components/ui/MenuFeatureSection";
 
 const images = [
   { src: "/dining-gallery.webp", alt: "Gallery 1" },
@@ -104,6 +105,42 @@ export default async function HomePage() {
           />
         </div>
       </Section>
+
+      <Section>
+        <div className="mb-10 lg:mt-0">
+          <MenuFeatureSection
+            image="/food-menu1.webp"
+            imageAlt="Liar Liar Japanese dining experience"
+            eyebrow="Modern Japanese Dining"
+            title="Discover Our Food Menu"
+            description="Explore a considered menu of fresh oysters, delicate nigiri, bold small plates and robata-grilled favourites. Discover Japanese techniques, global ingredients and flavours designed to be shared."
+            href="/A3-latest-food-menu-(2nd%20sep%202026).pdf"
+            buttonText="View Food Menu"
+          />
+        </div>
+        <div className="mt-10 lg:mt-0">
+          <MenuFeatureSection
+            image="/dining-drink-list.webp"
+            imageAlt="Liar Liar Japanese dining experience"
+            eyebrow="Signature Drinks"
+            title="View Drinks List"
+            description="An extensive sake list, Japanese whisky featuring Yamazaki, Hibiki and Nikka, wine, and a cocktail program that changes with the confessions. Our signature drinks list is crafted to complement the dining experience and carry the night long after."
+            href="/Liar-Liar-Drinks.pdf"
+            buttonText="View Drinks List"
+          />
+        </div>
+      </Section>
+      {/* <Section>
+        <MenuFeatureSection
+          image="/dining-drink-list.webp"
+          imageAlt="Liar Liar Japanese dining experience"
+          eyebrow="Signature Drinks"
+          title="View Drinks List"
+          description="An extensive sake list, Japanese whisky featuring Yamazaki, Hibiki and Nikka, wine, and a cocktail program that changes with the confessions. Our signature drinks list is crafted to complement the dining experience and carry the night long after."
+          href="/Liar-Liar-Drinks.pdf"
+          buttonText="View Drinks List"
+        />
+      </Section> */}
 
       <section>
         <ImageSlider images={images} />
